@@ -1,0 +1,1825 @@
+2025-06-03 22:50:28,389 - INFO - [logger_config:39] - Logging setup complete.
+2025-06-03 22:50:28,390 - INFO - [main:19] - Application started. Logging to: E:\CC Ai\logs\aura_app.log
+2025-06-03 22:50:28,477 - INFO - [main_window:31] - MainWindow initialized.
+2025-06-03 22:50:30,033 - INFO - [main:39] - Main window shown.
+2025-06-03 22:50:46,222 - INFO - [main_window:102] - Command entered via UI: hello
+2025-06-03 22:50:56,393 - INFO - [main_window:137] - MainWindow close event triggered. Aura is shutting down.
+2025-06-03 22:50:56,404 - INFO - [main:43] - Application exited normally via sys.exit().
+2025-06-03 22:50:56,404 - INFO - [main:49] - Aura application is shutting down.
+2025-06-03 22:56:01,761 - INFO - [logger_config:39] - Logging setup complete.
+2025-06-03 22:56:01,763 - INFO - [main:19] - Application started. Logging to: E:\CC Ai\logs\aura_app.log
+2025-06-03 22:56:01,832 - INFO - [main_window:31] - MainWindow initialized.
+2025-06-03 22:56:02,364 - INFO - [main:39] - Main window shown.
+2025-06-03 22:56:05,975 - INFO - [main_window:102] - Command entered via UI: hello
+2025-06-03 22:56:08,203 - WARNING - [main_window:110] - STOP button pressed by user.
+2025-06-03 22:56:15,199 - INFO - [main_window:137] - MainWindow close event triggered. Aura is shutting down.
+2025-06-03 22:56:15,209 - INFO - [main:43] - Application exited normally via sys.exit().
+2025-06-03 22:56:15,210 - INFO - [main:49] - Aura application is shutting down.
+2025-06-03 23:21:26,458 - INFO - [logger_config:39] - Logging setup complete.
+2025-06-03 23:21:26,459 - INFO - [main:19] - Application started. Logging to: E:\CC Ai\logs\aura_app.log
+2025-06-03 23:21:32,277 - INFO - [voice_service:83] - Porcupine initialized for keywords: ['porcupine'] with paths: ['C:\\Users\\Satyam\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python311\\site-packages\\pvporcupine\\resources/keyword_files\\windows\\porcupine_windows.ppn']
+2025-06-03 23:26:48,615 - INFO - [voice_service:97] - Whisper model 'base.en' loaded.
+2025-06-03 23:26:48,616 - WARNING - [main_window:194] - Mic icon not found: E:\CC Ai\assets\icons\microphone_off.svg
+2025-06-03 23:26:48,616 - INFO - [main_window:64] - MainWindow initialized.
+2025-06-03 23:26:49,009 - INFO - [main:39] - Main window shown.
+2025-06-03 23:27:00,251 - INFO - [main_window:168] - User toggled voice listening ON.
+2025-06-03 23:27:00,252 - INFO - [voice_service:253] - Voice service started listening.
+2025-06-03 23:27:00,253 - WARNING - [main_window:194] - Mic icon not found: E:\CC Ai\assets\icons\microphone_on.svg
+2025-06-03 23:27:04,579 - INFO - [voice_service:119] - Audio stream opened. Listening for wake word 'porcupine'...
+2025-06-03 23:27:08,060 - INFO - [main_window:173] - User toggled voice listening OFF.
+2025-06-03 23:27:08,061 - INFO - [voice_service:261] - Attempting to stop voice service...
+2025-06-03 23:27:08,102 - INFO - [voice_service:152] - Audio processing stopped.
+2025-06-03 23:27:08,103 - INFO - [voice_service:265] - Voice service stopped.
+2025-06-03 23:27:08,103 - WARNING - [main_window:194] - Mic icon not found: E:\CC Ai\assets\icons\microphone_off.svg
+2025-06-03 23:27:10,179 - INFO - [main_window:168] - User toggled voice listening ON.
+2025-06-03 23:27:10,180 - INFO - [voice_service:253] - Voice service started listening.
+2025-06-03 23:27:10,180 - WARNING - [main_window:194] - Mic icon not found: E:\CC Ai\assets\icons\microphone_on.svg
+2025-06-03 23:27:10,343 - INFO - [voice_service:119] - Audio stream opened. Listening for wake word 'porcupine'...
+2025-06-03 23:27:19,856 - INFO - [voice_service:129] - Wake word 'porcupine' detected!
+2025-06-03 23:27:19,856 - INFO - [voice_service:161] - Recording command...
+2025-06-03 23:27:21,875 - INFO - [voice_service:188] - Silence detected, stopping command recording.
+2025-06-03 23:27:21,875 - INFO - [voice_service:202] - Recording finished. 63 frames captured. Transcribing...
+2025-06-03 23:27:21,894 - ERROR - [voice_service:231] - Error during Whisper transcription: [WinError 2] The system cannot find the file specified
+Traceback (most recent call last):
+  File "E:\CC Ai\aura_core\services\voice_service.py", line 217, in _record_and_transcribe_command
+    result = self._whisper_model.transcribe(temp_wav_path,
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Satyam\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\whisper\transcribe.py", line 133, in transcribe
+    mel = log_mel_spectrogram(audio, model.dims.n_mels, padding=N_SAMPLES)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Satyam\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\whisper\audio.py", line 140, in log_mel_spectrogram
+    audio = load_audio(audio)
+            ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Satyam\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\whisper\audio.py", line 58, in load_audio
+    out = run(cmd, capture_output=True, check=True).stdout
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\subprocess.py", line 548, in run
+    with Popen(*popenargs, **kwargs) as process:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\subprocess.py", line 1026, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\subprocess.py", line 1538, in _execute_child
+    hp, ht, pid, tid = _winapi.CreateProcess(executable, args,
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [WinError 2] The system cannot find the file specified
+2025-06-03 23:27:21,917 - INFO - [voice_service:138] - Resuming listening for wake word 'porcupine'...
+2025-06-03 23:27:32,916 - INFO - [voice_service:129] - Wake word 'porcupine' detected!
+2025-06-03 23:27:32,916 - INFO - [voice_service:161] - Recording command...
+2025-06-03 23:27:34,926 - INFO - [voice_service:188] - Silence detected, stopping command recording.
+2025-06-03 23:27:34,926 - INFO - [voice_service:202] - Recording finished. 63 frames captured. Transcribing...
+2025-06-03 23:27:34,945 - ERROR - [voice_service:231] - Error during Whisper transcription: [WinError 2] The system cannot find the file specified
+Traceback (most recent call last):
+  File "E:\CC Ai\aura_core\services\voice_service.py", line 217, in _record_and_transcribe_command
+    result = self._whisper_model.transcribe(temp_wav_path,
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Satyam\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\whisper\transcribe.py", line 133, in transcribe
+    mel = log_mel_spectrogram(audio, model.dims.n_mels, padding=N_SAMPLES)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Satyam\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\whisper\audio.py", line 140, in log_mel_spectrogram
+    audio = load_audio(audio)
+            ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Satyam\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\whisper\audio.py", line 58, in load_audio
+    out = run(cmd, capture_output=True, check=True).stdout
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\subprocess.py", line 548, in run
+    with Popen(*popenargs, **kwargs) as process:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\subprocess.py", line 1026, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\subprocess.py", line 1538, in _execute_child
+    hp, ht, pid, tid = _winapi.CreateProcess(executable, args,
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [WinError 2] The system cannot find the file specified
+2025-06-03 23:27:34,947 - INFO - [voice_service:138] - Resuming listening for wake word 'porcupine'...
+2025-06-03 23:27:50,495 - INFO - [main_window:173] - User toggled voice listening OFF.
+2025-06-03 23:27:50,495 - INFO - [voice_service:261] - Attempting to stop voice service...
+2025-06-03 23:27:50,543 - INFO - [voice_service:152] - Audio processing stopped.
+2025-06-03 23:27:50,543 - INFO - [voice_service:265] - Voice service stopped.
+2025-06-03 23:27:50,545 - WARNING - [main_window:194] - Mic icon not found: E:\CC Ai\assets\icons\microphone_off.svg
+2025-06-03 23:27:53,439 - INFO - [main_window:168] - User toggled voice listening ON.
+2025-06-03 23:27:53,440 - INFO - [voice_service:253] - Voice service started listening.
+2025-06-03 23:27:53,440 - WARNING - [main_window:194] - Mic icon not found: E:\CC Ai\assets\icons\microphone_on.svg
+2025-06-03 23:27:53,602 - INFO - [voice_service:119] - Audio stream opened. Listening for wake word 'porcupine'...
+2025-06-03 23:28:03,309 - WARNING - [main_window:139] - STOP button pressed by user.
+2025-06-03 23:28:08,115 - INFO - [main_window:239] - MainWindow closeEvent triggered. Stopping voice service if active...
+2025-06-03 23:28:08,115 - INFO - [voice_service:261] - Attempting to stop voice service...
+2025-06-03 23:28:08,161 - INFO - [voice_service:152] - Audio processing stopped.
+2025-06-03 23:28:08,162 - INFO - [voice_service:265] - Voice service stopped.
+2025-06-03 23:28:08,162 - INFO - [main_window:242] - Aura application is preparing to shut down.
+2025-06-03 23:28:08,172 - INFO - [main:43] - Application exited normally via sys.exit().
+2025-06-03 23:28:08,173 - INFO - [main:49] - Aura application is shutting down.
+2025-06-03 23:29:36,239 - INFO - [logger_config:39] - Logging setup complete.
+2025-06-03 23:29:36,239 - INFO - [main:19] - Application started. Logging to: E:\CC Ai\logs\aura_app.log
+2025-06-03 23:29:41,104 - INFO - [voice_service:83] - Porcupine initialized for keywords: ['porcupine'] with paths: ['C:\\Users\\Satyam\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python311\\site-packages\\pvporcupine\\resources/keyword_files\\windows\\porcupine_windows.ppn']
+2025-06-03 23:29:43,553 - INFO - [voice_service:97] - Whisper model 'base.en' loaded.
+2025-06-03 23:29:43,553 - WARNING - [main_window:194] - Mic icon not found: E:\CC Ai\assets\icons\microphone_off.svg
+2025-06-03 23:29:43,553 - INFO - [main_window:64] - MainWindow initialized.
+2025-06-03 23:29:43,915 - INFO - [main:39] - Main window shown.
+2025-06-03 23:29:51,275 - INFO - [main_window:168] - User toggled voice listening ON.
+2025-06-03 23:29:51,276 - INFO - [voice_service:253] - Voice service started listening.
+2025-06-03 23:29:51,277 - WARNING - [main_window:194] - Mic icon not found: E:\CC Ai\assets\icons\microphone_on.svg
+2025-06-03 23:29:51,645 - INFO - [voice_service:119] - Audio stream opened. Listening for wake word 'porcupine'...
+2025-06-03 23:30:10,697 - INFO - [voice_service:129] - Wake word 'porcupine' detected!
+2025-06-03 23:30:10,697 - INFO - [voice_service:161] - Recording command...
+2025-06-03 23:30:12,708 - INFO - [voice_service:188] - Silence detected, stopping command recording.
+2025-06-03 23:30:12,709 - INFO - [voice_service:202] - Recording finished. 63 frames captured. Transcribing...
+2025-06-03 23:30:12,727 - ERROR - [voice_service:231] - Error during Whisper transcription: [WinError 2] The system cannot find the file specified
+Traceback (most recent call last):
+  File "E:\CC Ai\aura_core\services\voice_service.py", line 217, in _record_and_transcribe_command
+    result = self._whisper_model.transcribe(temp_wav_path,
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Satyam\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\whisper\transcribe.py", line 133, in transcribe
+    mel = log_mel_spectrogram(audio, model.dims.n_mels, padding=N_SAMPLES)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Satyam\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\whisper\audio.py", line 140, in log_mel_spectrogram
+    audio = load_audio(audio)
+            ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Satyam\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\whisper\audio.py", line 58, in load_audio
+    out = run(cmd, capture_output=True, check=True).stdout
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\subprocess.py", line 548, in run
+    with Popen(*popenargs, **kwargs) as process:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\subprocess.py", line 1026, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\subprocess.py", line 1538, in _execute_child
+    hp, ht, pid, tid = _winapi.CreateProcess(executable, args,
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [WinError 2] The system cannot find the file specified
+2025-06-03 23:30:12,730 - INFO - [voice_service:138] - Resuming listening for wake word 'porcupine'...
+2025-06-03 23:30:24,038 - INFO - [main_window:239] - MainWindow closeEvent triggered. Stopping voice service if active...
+2025-06-03 23:30:24,039 - INFO - [voice_service:261] - Attempting to stop voice service...
+2025-06-03 23:30:24,065 - INFO - [voice_service:152] - Audio processing stopped.
+2025-06-03 23:30:24,065 - INFO - [voice_service:265] - Voice service stopped.
+2025-06-03 23:30:24,065 - INFO - [main_window:242] - Aura application is preparing to shut down.
+2025-06-03 23:30:24,077 - INFO - [main:43] - Application exited normally via sys.exit().
+2025-06-03 23:30:24,077 - INFO - [main:49] - Aura application is shutting down.
+2025-06-03 23:51:15,346 - INFO - [logger_config:39] - Logging setup complete.
+2025-06-03 23:51:15,346 - INFO - [main:19] - Application started. Logging to: E:\CC Ai\logs\aura_app.log
+2025-06-03 23:51:20,524 - INFO - [voice_service:83] - Porcupine initialized for keywords: ['porcupine'] with paths: ['C:\\Users\\Satyam\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python311\\site-packages\\pvporcupine\\resources/keyword_files\\windows\\porcupine_windows.ppn']
+2025-06-03 23:51:23,136 - INFO - [voice_service:97] - Whisper model 'base.en' loaded.
+2025-06-03 23:51:23,137 - INFO - [main_window:64] - MainWindow initialized.
+2025-06-03 23:51:23,570 - INFO - [main:39] - Main window shown.
+2025-06-03 23:51:33,728 - INFO - [main_window:133] - Command entered via UI text input: hello
+2025-06-03 23:51:37,964 - INFO - [main_window:168] - User toggled voice listening ON.
+2025-06-03 23:51:37,965 - INFO - [voice_service:253] - Voice service started listening.
+2025-06-03 23:51:38,366 - INFO - [voice_service:119] - Audio stream opened. Listening for wake word 'porcupine'...
+2025-06-03 23:51:52,626 - WARNING - [main_window:139] - STOP button pressed by user.
+2025-06-03 23:51:54,976 - INFO - [main_window:239] - MainWindow closeEvent triggered. Stopping voice service if active...
+2025-06-03 23:51:54,976 - INFO - [voice_service:261] - Attempting to stop voice service...
+2025-06-03 23:51:55,006 - INFO - [voice_service:152] - Audio processing stopped.
+2025-06-03 23:51:55,006 - INFO - [voice_service:265] - Voice service stopped.
+2025-06-03 23:51:55,007 - INFO - [main_window:242] - Aura application is preparing to shut down.
+2025-06-03 23:51:55,018 - INFO - [main:43] - Application exited normally via sys.exit().
+2025-06-03 23:51:55,018 - INFO - [main:49] - Aura application is shutting down.
+2025-06-04 00:02:54,999 - INFO - [logger_config:39] - Logging setup complete.
+2025-06-04 00:02:54,999 - INFO - [main:19] - Application started. Logging to: E:\CC Ai\logs\aura_app.log
+2025-06-04 00:02:55,071 - INFO - [voice_service:76] - Custom keyword file found: E:\CC Ai\aura_core\services\..\..\assets\porcupine_models\Hey-cc_en_windows_v3_0_0.ppn
+2025-06-04 00:02:59,909 - INFO - [voice_service:104] - Porcupine initialized for keyword: 'Hey cc' with paths: ['E:\\CC Ai\\aura_core\\services\\..\\..\\assets\\porcupine_models\\Hey-cc_en_windows_v3_0_0.ppn']
+2025-06-04 00:03:02,444 - INFO - [voice_service:121] - Whisper model 'base.en' loaded.
+2025-06-04 00:03:02,445 - INFO - [main_window:64] - MainWindow initialized.
+2025-06-04 00:03:03,015 - INFO - [main:39] - Main window shown.
+2025-06-04 00:03:13,262 - INFO - [main_window:168] - User toggled voice listening ON.
+2025-06-04 00:03:13,263 - INFO - [voice_service:276] - Voice service started listening.
+2025-06-04 00:03:13,657 - INFO - [voice_service:142] - Audio stream opened. Listening for wake word 'Hey cc'...
+2025-06-04 00:03:16,158 - INFO - [voice_service:152] - Wake word 'Hey cc' detected!
+2025-06-04 00:03:16,158 - INFO - [voice_service:184] - Recording command...
+2025-06-04 00:03:18,177 - INFO - [voice_service:211] - Silence detected, stopping command recording.
+2025-06-04 00:03:18,177 - INFO - [voice_service:225] - Recording finished. 63 frames captured. Transcribing...
+2025-06-04 00:03:18,199 - ERROR - [voice_service:254] - Error during Whisper transcription: [WinError 2] The system cannot find the file specified
+Traceback (most recent call last):
+  File "E:\CC Ai\aura_core\services\voice_service.py", line 240, in _record_and_transcribe_command
+    result = self._whisper_model.transcribe(temp_wav_path,
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Satyam\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\whisper\transcribe.py", line 133, in transcribe
+    mel = log_mel_spectrogram(audio, model.dims.n_mels, padding=N_SAMPLES)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Satyam\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\whisper\audio.py", line 140, in log_mel_spectrogram
+    audio = load_audio(audio)
+            ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Satyam\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\whisper\audio.py", line 58, in load_audio
+    out = run(cmd, capture_output=True, check=True).stdout
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\subprocess.py", line 548, in run
+    with Popen(*popenargs, **kwargs) as process:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\subprocess.py", line 1026, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\subprocess.py", line 1538, in _execute_child
+    hp, ht, pid, tid = _winapi.CreateProcess(executable, args,
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [WinError 2] The system cannot find the file specified
+2025-06-04 00:03:18,202 - INFO - [voice_service:161] - Resuming listening for wake word 'Hey cc'...
+2025-06-04 00:03:24,259 - INFO - [voice_service:152] - Wake word 'Hey cc' detected!
+2025-06-04 00:03:24,259 - INFO - [voice_service:184] - Recording command...
+2025-06-04 00:03:26,268 - INFO - [voice_service:211] - Silence detected, stopping command recording.
+2025-06-04 00:03:26,268 - INFO - [voice_service:225] - Recording finished. 63 frames captured. Transcribing...
+2025-06-04 00:03:26,284 - ERROR - [voice_service:254] - Error during Whisper transcription: [WinError 2] The system cannot find the file specified
+Traceback (most recent call last):
+  File "E:\CC Ai\aura_core\services\voice_service.py", line 240, in _record_and_transcribe_command
+    result = self._whisper_model.transcribe(temp_wav_path,
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Satyam\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\whisper\transcribe.py", line 133, in transcribe
+    mel = log_mel_spectrogram(audio, model.dims.n_mels, padding=N_SAMPLES)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Satyam\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\whisper\audio.py", line 140, in log_mel_spectrogram
+    audio = load_audio(audio)
+            ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Satyam\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\whisper\audio.py", line 58, in load_audio
+    out = run(cmd, capture_output=True, check=True).stdout
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\subprocess.py", line 548, in run
+    with Popen(*popenargs, **kwargs) as process:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\subprocess.py", line 1026, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\subprocess.py", line 1538, in _execute_child
+    hp, ht, pid, tid = _winapi.CreateProcess(executable, args,
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [WinError 2] The system cannot find the file specified
+2025-06-04 00:03:26,286 - INFO - [voice_service:161] - Resuming listening for wake word 'Hey cc'...
+2025-06-04 00:03:29,204 - INFO - [main_window:239] - MainWindow closeEvent triggered. Stopping voice service if active...
+2025-06-04 00:03:29,204 - INFO - [voice_service:284] - Attempting to stop voice service...
+2025-06-04 00:03:29,246 - INFO - [voice_service:175] - Audio processing stopped.
+2025-06-04 00:03:29,246 - INFO - [voice_service:288] - Voice service stopped.
+2025-06-04 00:03:29,247 - INFO - [main_window:242] - Aura application is preparing to shut down.
+2025-06-04 00:03:29,258 - INFO - [main:43] - Application exited normally via sys.exit().
+2025-06-04 00:03:29,258 - INFO - [main:49] - Aura application is shutting down.
+2025-06-04 00:09:02,122 - INFO - [logger_config:39] - Logging setup complete.
+2025-06-04 00:09:02,122 - INFO - [main:19] - Application started. Logging to: E:\CC Ai\logs\aura_app.log
+2025-06-04 00:09:02,192 - INFO - [voice_service:76] - Custom keyword file found: E:\CC Ai\aura_core\services\..\..\assets\porcupine_models\Hey-cc_en_windows_v3_0_0.ppn
+2025-06-04 00:09:07,147 - INFO - [voice_service:104] - Porcupine initialized for keyword: 'Hey cc' with paths: ['E:\\CC Ai\\aura_core\\services\\..\\..\\assets\\porcupine_models\\Hey-cc_en_windows_v3_0_0.ppn']
+2025-06-04 00:09:09,768 - INFO - [voice_service:121] - Whisper model 'base.en' loaded.
+2025-06-04 00:09:09,769 - INFO - [main_window:64] - MainWindow initialized.
+2025-06-04 00:09:10,334 - INFO - [main:39] - Main window shown.
+2025-06-04 00:09:13,357 - INFO - [main_window:168] - User toggled voice listening ON.
+2025-06-04 00:09:13,358 - INFO - [voice_service:276] - Voice service started listening.
+2025-06-04 00:09:13,793 - INFO - [voice_service:142] - Audio stream opened. Listening for wake word 'Hey cc'...
+2025-06-04 00:09:15,406 - INFO - [voice_service:152] - Wake word 'Hey cc' detected!
+2025-06-04 00:09:15,406 - INFO - [voice_service:184] - Recording command...
+2025-06-04 00:09:17,416 - INFO - [voice_service:211] - Silence detected, stopping command recording.
+2025-06-04 00:09:17,416 - INFO - [voice_service:225] - Recording finished. 63 frames captured. Transcribing...
+2025-06-04 00:09:18,247 - INFO - [voice_service:243] - Whisper transcription: 'Hello.'
+2025-06-04 00:09:18,248 - INFO - [voice_service:161] - Resuming listening for wake word 'Hey cc'...
+2025-06-04 00:09:28,546 - INFO - [main_window:239] - MainWindow closeEvent triggered. Stopping voice service if active...
+2025-06-04 00:09:28,546 - INFO - [voice_service:284] - Attempting to stop voice service...
+2025-06-04 00:09:28,579 - INFO - [voice_service:175] - Audio processing stopped.
+2025-06-04 00:09:28,579 - INFO - [voice_service:288] - Voice service stopped.
+2025-06-04 00:09:28,579 - INFO - [main_window:242] - Aura application is preparing to shut down.
+2025-06-04 00:09:28,592 - INFO - [main:43] - Application exited normally via sys.exit().
+2025-06-04 00:09:28,592 - INFO - [main:49] - Aura application is shutting down.
+2025-06-04 00:10:42,064 - INFO - [logger_config:39] - Logging setup complete.
+2025-06-04 00:10:42,064 - INFO - [main:19] - Application started. Logging to: E:\CC Ai\logs\aura_app.log
+2025-06-04 00:10:42,125 - INFO - [voice_service:76] - Custom keyword file found: E:\CC Ai\aura_core\services\..\..\assets\porcupine_models\Hey-cc_en_windows_v3_0_0.ppn
+2025-06-04 00:10:46,945 - INFO - [voice_service:104] - Porcupine initialized for keyword: 'Hey cc' with paths: ['E:\\CC Ai\\aura_core\\services\\..\\..\\assets\\porcupine_models\\Hey-cc_en_windows_v3_0_0.ppn']
+2025-06-04 00:10:49,406 - INFO - [voice_service:121] - Whisper model 'base.en' loaded.
+2025-06-04 00:10:49,407 - INFO - [main_window:64] - MainWindow initialized.
+2025-06-04 00:10:49,754 - INFO - [main:39] - Main window shown.
+2025-06-04 00:11:00,933 - INFO - [main_window:236] - About action triggered (not implemented).
+2025-06-04 00:11:06,081 - INFO - [main_window:228] - Settings action triggered (not implemented).
+2025-06-04 00:11:09,024 - INFO - [main_window:239] - MainWindow closeEvent triggered. Stopping voice service if active...
+2025-06-04 00:11:09,025 - INFO - [voice_service:290] - Voice service is not running.
+2025-06-04 00:11:09,025 - INFO - [main_window:242] - Aura application is preparing to shut down.
+2025-06-04 00:11:09,035 - INFO - [main:43] - Application exited normally via sys.exit().
+2025-06-04 00:11:09,035 - INFO - [main:49] - Aura application is shutting down.
+2025-06-04 11:33:31,908 - INFO - [logger_config:39] - Logging setup complete.
+2025-06-04 11:33:31,909 - INFO - [main:22] - Application started. Logging to: E:\CC Ai\logs\aura_app.log
+2025-06-04 11:33:32,072 - INFO - [voice_service:76] - Custom keyword file found: E:\CC Ai\aura_core\services\..\..\assets\porcupine_models\Hey-cc_en_windows_v3_0_0.ppn
+2025-06-04 11:33:37,202 - INFO - [voice_service:104] - Porcupine initialized for keyword: 'Hey cc' with paths: ['E:\\CC Ai\\aura_core\\services\\..\\..\\assets\\porcupine_models\\Hey-cc_en_windows_v3_0_0.ppn']
+2025-06-04 11:33:40,757 - INFO - [voice_service:121] - Whisper model 'base.en' loaded.
+2025-06-04 11:33:40,758 - INFO - [main_window:64] - MainWindow initialized.
+2025-06-04 11:33:40,759 - INFO - [gemini_service:28] - GeminiService initialized successfully with gemini-1.5-flash-latest.
+2025-06-04 11:33:40,759 - INFO - [nlu_agent:14] - NLUAgent initialized.
+2025-06-04 11:33:40,760 - INFO - [main_orchestrator:24] - MainOrchestrator initialized.
+2025-06-04 11:33:40,760 - INFO - [main:35] - Core backend components (Gemini, NLU, Orchestrator) initialized.
+2025-06-04 11:33:40,998 - INFO - [main:68] - Main window shown.
+2025-06-04 11:33:50,972 - INFO - [main_window:133] - Command entered via UI text input: hello aura
+2025-06-04 11:33:50,973 - INFO - [main_orchestrator:34] - Orchestrator received command: hello aura
+2025-06-04 11:33:53,231 - INFO - [gemini_service:52] - Gemini raw response received: ```json
+{
+  "intent": "unknown_command",
+  "entities": {}
+}
+```
+...
+2025-06-04 11:33:53,232 - INFO - [nlu_agent:110] - NLUAgent successfully parsed command. Intent: 'unknown_command', Entities: {}
+2025-06-04 11:33:53,232 - INFO - [main_orchestrator:48] - NLU Result - Intent: unknown_command, Entities: {}
+2025-06-04 11:34:11,980 - INFO - [main_window:133] - Command entered via UI text input: search for aura
+2025-06-04 11:34:11,981 - INFO - [main_orchestrator:34] - Orchestrator received command: search for aura
+2025-06-04 11:34:12,816 - INFO - [gemini_service:52] - Gemini raw response received: ```json
+{
+  "intent": "search_web",
+  "entities": {
+    "search_query": "aura"
+  }
+}
+```
+...
+2025-06-04 11:34:12,816 - INFO - [nlu_agent:110] - NLUAgent successfully parsed command. Intent: 'search_web', Entities: {'search_query': 'aura'}
+2025-06-04 11:34:12,817 - INFO - [main_orchestrator:48] - NLU Result - Intent: search_web, Entities: {'search_query': 'aura'}
+2025-06-04 11:35:02,520 - INFO - [main_window:168] - User toggled voice listening ON.
+2025-06-04 11:35:02,521 - INFO - [voice_service:276] - Voice service started listening.
+2025-06-04 11:35:03,023 - INFO - [voice_service:142] - Audio stream opened. Listening for wake word 'Hey cc'...
+2025-06-04 11:35:06,238 - INFO - [voice_service:152] - Wake word 'Hey cc' detected!
+2025-06-04 11:35:06,238 - INFO - [voice_service:184] - Recording command...
+2025-06-04 11:35:08,246 - INFO - [voice_service:211] - Silence detected, stopping command recording.
+2025-06-04 11:35:08,246 - INFO - [voice_service:225] - Recording finished. 63 frames captured. Transcribing...
+2025-06-04 11:35:09,620 - INFO - [voice_service:243] - Whisper transcription: 'search for order.'
+2025-06-04 11:35:09,621 - INFO - [main_orchestrator:34] - Orchestrator received command: search for order.
+2025-06-04 11:35:09,621 - INFO - [voice_service:161] - Resuming listening for wake word 'Hey cc'...
+2025-06-04 11:35:10,504 - INFO - [gemini_service:52] - Gemini raw response received: ```json
+{
+  "intent": "search_web",
+  "entities": {
+    "search_query": "order"
+  }
+}
+```
+...
+2025-06-04 11:35:10,504 - INFO - [nlu_agent:110] - NLUAgent successfully parsed command. Intent: 'search_web', Entities: {'search_query': 'order'}
+2025-06-04 11:35:10,504 - INFO - [main_orchestrator:48] - NLU Result - Intent: search_web, Entities: {'search_query': 'order'}
+2025-06-04 11:35:17,771 - INFO - [main_window:173] - User toggled voice listening OFF.
+2025-06-04 11:35:17,771 - INFO - [voice_service:284] - Attempting to stop voice service...
+2025-06-04 11:35:17,806 - INFO - [voice_service:175] - Audio processing stopped.
+2025-06-04 11:35:17,806 - INFO - [voice_service:288] - Voice service stopped.
+2025-06-04 11:35:21,994 - INFO - [main_window:228] - Settings action triggered (not implemented).
+2025-06-04 11:35:24,684 - INFO - [main_window:236] - About action triggered (not implemented).
+2025-06-04 11:35:28,769 - INFO - [main_window:239] - MainWindow closeEvent triggered. Stopping voice service if active...
+2025-06-04 11:35:28,769 - INFO - [voice_service:290] - Voice service is not running.
+2025-06-04 11:35:28,770 - INFO - [main_window:242] - Aura application is preparing to shut down.
+2025-06-04 11:35:28,780 - INFO - [main:72] - Application exited normally via sys.exit().
+2025-06-04 11:35:28,780 - INFO - [main:78] - Aura application is shutting down.
+2025-06-04 11:35:28,909 - INFO - [voice_service:290] - Voice service is not running.
+2025-06-04 11:35:28,909 - INFO - [voice_service:296] - Porcupine instance deleted.
+2025-06-04 11:42:08,827 - INFO - [logger_config:39] - Logging setup complete.
+2025-06-04 11:42:08,827 - INFO - [main:21] - Application started. Logging to: E:\CC Ai\logs\aura_app.log
+2025-06-04 11:42:08,938 - INFO - [voice_service:76] - Custom keyword file found: E:\CC Ai\aura_core\services\..\..\assets\porcupine_models\Hey-cc_en_windows_v3_0_0.ppn
+2025-06-04 11:42:13,744 - INFO - [voice_service:104] - Porcupine initialized for keyword: 'Hey cc' with paths: ['E:\\CC Ai\\aura_core\\services\\..\\..\\assets\\porcupine_models\\Hey-cc_en_windows_v3_0_0.ppn']
+2025-06-04 11:42:16,424 - INFO - [voice_service:121] - Whisper model 'base.en' loaded.
+2025-06-04 11:42:16,425 - INFO - [main_window:64] - MainWindow initialized.
+2025-06-04 11:42:16,425 - INFO - [gemini_service:28] - GeminiService initialized successfully with gemini-1.5-flash-latest.
+2025-06-04 11:42:16,425 - INFO - [nlu_agent:14] - NLUAgent initialized.
+2025-06-04 11:42:16,425 - INFO - [planning_agent:14] - PlanningAgent initialized.
+2025-06-04 11:42:16,426 - INFO - [action_agent:9] - ActionAgent initialized (Stub).
+2025-06-04 11:42:16,426 - INFO - [main_orchestrator:24] - MainOrchestrator initialized with NLU, Planning, and Action agents.
+2025-06-04 11:42:16,426 - INFO - [main:42] - Core backend components initialized.
+2025-06-04 11:42:16,818 - INFO - [main:67] - Main window shown.
+2025-06-04 11:42:30,171 - INFO - [main_window:133] - Command entered via UI text input: open calculator
+2025-06-04 11:42:30,172 - INFO - [main_orchestrator:35] - Orchestrator received command: open calculator
+2025-06-04 11:42:32,449 - INFO - [gemini_service:52] - Gemini raw response received: ```json
+{
+  "intent": "open_application",
+  "entities": {
+    "application_name": "calculator"
+  }
+}
+```
+...
+2025-06-04 11:42:32,449 - INFO - [nlu_agent:110] - NLUAgent successfully parsed command. Intent: 'open_application', Entities: {'application_name': 'calculator'}
+2025-06-04 11:42:32,450 - INFO - [main_orchestrator:56] - NLU Result - Intent: open_application, Entities: {'application_name': 'calculator'}
+2025-06-04 11:42:33,479 - INFO - [gemini_service:52] - Gemini raw response received: ```json
+[
+  {
+    "action_type": "open_application",
+    "parameters": {
+      "application_name": "calculator"
+    }
+  }
+]
+```
+...
+2025-06-04 11:42:33,480 - INFO - [planning_agent:131] - PlanningAgent generated plan with 1 steps.
+2025-06-04 11:42:33,480 - INFO - [main_orchestrator:84] - Generated Plan with 1 steps.
+2025-06-04 11:42:33,481 - INFO - [main_orchestrator:93] - Plan execution stub: Plan logged. Actual execution to be implemented.
+2025-06-04 11:43:03,871 - INFO - [main_window:133] - Command entered via UI text input: search for cow on edge
+2025-06-04 11:43:03,872 - INFO - [main_orchestrator:35] - Orchestrator received command: search for cow on edge
+2025-06-04 11:43:04,764 - INFO - [gemini_service:52] - Gemini raw response received: ```json
+{
+  "intent": "search_web",
+  "entities": {
+    "search_query": "cow on edge"
+  }
+}
+```
+...
+2025-06-04 11:43:04,765 - INFO - [nlu_agent:110] - NLUAgent successfully parsed command. Intent: 'search_web', Entities: {'search_query': 'cow on edge'}
+2025-06-04 11:43:04,765 - INFO - [main_orchestrator:56] - NLU Result - Intent: search_web, Entities: {'search_query': 'cow on edge'}
+2025-06-04 11:43:06,044 - INFO - [gemini_service:52] - Gemini raw response received: ```json
+[
+  {
+    "action_type": "search_web",
+    "parameters": {
+      "search_query": "cow on edge"
+    }
+  }
+]
+```
+...
+2025-06-04 11:43:06,044 - INFO - [planning_agent:131] - PlanningAgent generated plan with 1 steps.
+2025-06-04 11:43:06,044 - INFO - [main_orchestrator:84] - Generated Plan with 1 steps.
+2025-06-04 11:43:06,046 - INFO - [main_orchestrator:93] - Plan execution stub: Plan logged. Actual execution to be implemented.
+2025-06-04 11:43:37,406 - INFO - [main_window:133] - Command entered via UI text input: search for cow on microsoft edge
+2025-06-04 11:43:37,407 - INFO - [main_orchestrator:35] - Orchestrator received command: search for cow on microsoft edge
+2025-06-04 11:43:38,365 - INFO - [gemini_service:52] - Gemini raw response received: ```json
+{
+  "intent": "search_web",
+  "entities": {
+    "search_query": "cow",
+    "application_name": "Microsoft Edge"
+  }
+}
+```
+...
+2025-06-04 11:43:38,365 - INFO - [nlu_agent:110] - NLUAgent successfully parsed command. Intent: 'search_web', Entities: {'search_query': 'cow', 'application_name': 'Microsoft Edge'}
+2025-06-04 11:43:38,365 - INFO - [main_orchestrator:56] - NLU Result - Intent: search_web, Entities: {'search_query': 'cow', 'application_name': 'Microsoft Edge'}
+2025-06-04 11:43:40,211 - INFO - [gemini_service:52] - Gemini raw response received: ```json
+[
+  {
+    "action_type": "open_application",
+    "parameters": {
+      "application_name": "Microsoft Edge"
+    }
+  },
+  {
+    "action_type": "type_text",
+    "parameters": {
+      "text": "co...
+2025-06-04 11:43:40,212 - INFO - [planning_agent:131] - PlanningAgent generated plan with 3 steps.
+2025-06-04 11:43:40,212 - INFO - [main_orchestrator:84] - Generated Plan with 3 steps.
+2025-06-04 11:43:40,216 - INFO - [main_orchestrator:93] - Plan execution stub: Plan logged. Actual execution to be implemented.
+2025-06-04 11:44:10,809 - WARNING - [main_window:139] - STOP button pressed by user.
+2025-06-04 11:44:10,810 - INFO - [main_orchestrator:113] - Orchestrator received STOP request.
+2025-06-04 11:44:10,810 - INFO - [main_orchestrator:122] - Plan execution halted by user.
+2025-06-04 11:44:18,987 - WARNING - [main_window:139] - STOP button pressed by user.
+2025-06-04 11:44:18,987 - INFO - [main_orchestrator:113] - Orchestrator received STOP request.
+2025-06-04 11:44:24,056 - INFO - [main_window:239] - MainWindow closeEvent triggered. Stopping voice service if active...
+2025-06-04 11:44:24,056 - INFO - [voice_service:290] - Voice service is not running.
+2025-06-04 11:44:24,057 - INFO - [main_window:242] - Aura application is preparing to shut down.
+2025-06-04 11:44:24,066 - INFO - [main:71] - Application exited normally via sys.exit().
+2025-06-04 11:44:24,066 - INFO - [main:77] - Aura application is shutting down.
+2025-06-04 11:44:24,190 - INFO - [voice_service:290] - Voice service is not running.
+2025-06-04 11:44:24,191 - INFO - [voice_service:296] - Porcupine instance deleted.
+2025-06-04 12:08:57,863 - INFO - [logger_config:39] - Logging setup complete.
+2025-06-04 12:08:57,863 - INFO - [main:22] - Application started. Logging to: E:\CC Ai\logs\aura_app.log
+2025-06-04 12:08:57,920 - INFO - [voice_service:76] - Custom keyword file found: E:\CC Ai\aura_core\services\..\..\assets\porcupine_models\Hey-cc_en_windows_v3_0_0.ppn
+2025-06-04 12:09:02,783 - INFO - [voice_service:104] - Porcupine initialized for keyword: 'Hey cc' with paths: ['E:\\CC Ai\\aura_core\\services\\..\\..\\assets\\porcupine_models\\Hey-cc_en_windows_v3_0_0.ppn']
+2025-06-04 12:09:05,560 - INFO - [voice_service:121] - Whisper model 'base.en' loaded.
+2025-06-04 12:09:05,561 - INFO - [main_window:64] - MainWindow initialized.
+2025-06-04 12:09:05,561 - INFO - [gemini_service:28] - GeminiService initialized successfully with gemini-1.5-flash-latest.
+2025-06-04 12:09:05,561 - INFO - [os_interaction_service:13] - OSInteractionService initialized for OS: windows
+2025-06-04 12:09:05,561 - INFO - [perception_agent:13] - PerceptionAgent initialized.
+2025-06-04 12:09:05,561 - INFO - [perception_agent:15] - PerceptionAgent has access to GeminiService for vision tasks.
+2025-06-04 12:09:05,561 - INFO - [nlu_agent:14] - NLUAgent initialized.
+2025-06-04 12:09:05,561 - INFO - [planning_agent:16] - PlanningAgent initialized.
+2025-06-04 12:09:05,562 - INFO - [action_agent:15] - ActionAgent initialized.
+2025-06-04 12:09:05,562 - INFO - [main_orchestrator:35] - MainOrchestrator initialized with NLU, Planning, Action, and Perception agents.
+2025-06-04 12:09:05,564 - INFO - [main:50] - Core backend components initialized.
+2025-06-04 12:09:05,911 - INFO - [main:75] - Main window shown.
+2025-06-04 12:09:12,856 - INFO - [main_window:133] - Command entered via UI text input: open notepad
+2025-06-04 12:09:14,590 - ERROR - [gemini_service:68] - Error communicating with Gemini API (attempt 1/3): 404 models/gemini-2.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+Traceback (most recent call last):
+  File "E:\CC Ai\aura_core\services\gemini_service.py", line 45, in generate_text_response
+    response = self._model.generate_content(prompt)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Satyam\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\google\generativeai\generative_models.py", line 331, in generate_content
+    response = self._client.generate_content(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Satyam\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\google\ai\generativelanguage_v1beta\services\generative_service\client.py", line 835, in generate_content
+    response = rpc(
+               ^^^^
+  File "C:\Users\Satyam\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\google\api_core\gapic_v1\method.py", line 131, in __call__
+    return wrapped_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Satyam\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\google\api_core\retry\retry_unary.py", line 294, in retry_wrapped_func
+    return retry_target(
+           ^^^^^^^^^^^^^
+  File "C:\Users\Satyam\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\google\api_core\retry\retry_unary.py", line 156, in retry_target
+    next_sleep = _retry_error_helper(
+                 ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Satyam\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\google\api_core\retry\retry_base.py", line 214, in _retry_error_helper
+    raise final_exc from source_exc
+  File "C:\Users\Satyam\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\google\api_core\retry\retry_unary.py", line 147, in retry_target
+    result = target()
+             ^^^^^^^^
+  File "C:\Users\Satyam\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\google\api_core\timeout.py", line 130, in func_with_timeout
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Satyam\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\google\api_core\grpc_helpers.py", line 78, in error_remapped_callable
+    raise exceptions.from_grpc_error(exc) from exc
+google.api_core.exceptions.NotFound: 404 models/gemini-2.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-06-04 12:09:15,005 - ERROR - [gemini_service:68] - Error communicating with Gemini API (attempt 2/3): 404 models/gemini-2.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+Traceback (most recent call last):
+  File "E:\CC Ai\aura_core\services\gemini_service.py", line 45, in generate_text_response
+    response = self._model.generate_content(prompt)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Satyam\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\google\generativeai\generative_models.py", line 331, in generate_content
+    response = self._client.generate_content(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Satyam\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\google\ai\generativelanguage_v1beta\services\generative_service\client.py", line 835, in generate_content
+    response = rpc(
+               ^^^^
+  File "C:\Users\Satyam\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\google\api_core\gapic_v1\method.py", line 131, in __call__
+    return wrapped_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Satyam\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\google\api_core\retry\retry_unary.py", line 294, in retry_wrapped_func
+    return retry_target(
+           ^^^^^^^^^^^^^
+  File "C:\Users\Satyam\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\google\api_core\retry\retry_unary.py", line 156, in retry_target
+    next_sleep = _retry_error_helper(
+                 ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Satyam\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\google\api_core\retry\retry_base.py", line 214, in _retry_error_helper
+    raise final_exc from source_exc
+  File "C:\Users\Satyam\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\google\api_core\retry\retry_unary.py", line 147, in retry_target
+    result = target()
+             ^^^^^^^^
+  File "C:\Users\Satyam\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\google\api_core\timeout.py", line 130, in func_with_timeout
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Satyam\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\google\api_core\grpc_helpers.py", line 78, in error_remapped_callable
+    raise exceptions.from_grpc_error(exc) from exc
+google.api_core.exceptions.NotFound: 404 models/gemini-2.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-06-04 12:09:16,312 - ERROR - [gemini_service:68] - Error communicating with Gemini API (attempt 3/3): 404 models/gemini-2.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+Traceback (most recent call last):
+  File "E:\CC Ai\aura_core\services\gemini_service.py", line 45, in generate_text_response
+    response = self._model.generate_content(prompt)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Satyam\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\google\generativeai\generative_models.py", line 331, in generate_content
+    response = self._client.generate_content(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Satyam\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\google\ai\generativelanguage_v1beta\services\generative_service\client.py", line 835, in generate_content
+    response = rpc(
+               ^^^^
+  File "C:\Users\Satyam\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\google\api_core\gapic_v1\method.py", line 131, in __call__
+    return wrapped_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Satyam\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\google\api_core\retry\retry_unary.py", line 294, in retry_wrapped_func
+    return retry_target(
+           ^^^^^^^^^^^^^
+  File "C:\Users\Satyam\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\google\api_core\retry\retry_unary.py", line 156, in retry_target
+    next_sleep = _retry_error_helper(
+                 ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Satyam\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\google\api_core\retry\retry_base.py", line 214, in _retry_error_helper
+    raise final_exc from source_exc
+  File "C:\Users\Satyam\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\google\api_core\retry\retry_unary.py", line 147, in retry_target
+    result = target()
+             ^^^^^^^^
+  File "C:\Users\Satyam\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\google\api_core\timeout.py", line 130, in func_with_timeout
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Satyam\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\google\api_core\grpc_helpers.py", line 78, in error_remapped_callable
+    raise exceptions.from_grpc_error(exc) from exc
+google.api_core.exceptions.NotFound: 404 models/gemini-2.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-06-04 12:09:16,313 - ERROR - [gemini_service:71] - Max retries reached for Gemini API call.
+2025-06-04 12:09:16,313 - ERROR - [nlu_agent:101] - NLUAgent received no response from GeminiService for command parsing.
+2025-06-04 12:09:16,314 - ERROR - [main_orchestrator:89] - NLU processing failed: 
+2025-06-04 12:09:22,719 - INFO - [main_window:239] - MainWindow closeEvent triggered. Stopping voice service if active...
+2025-06-04 12:09:22,720 - INFO - [voice_service:290] - Voice service is not running.
+2025-06-04 12:09:22,720 - INFO - [main_window:242] - Aura application is preparing to shut down.
+2025-06-04 12:09:22,731 - INFO - [main:79] - Application exited normally via sys.exit().
+2025-06-04 12:09:22,732 - INFO - [main:85] - Aura application is shutting down.
+2025-06-04 12:09:22,852 - INFO - [voice_service:290] - Voice service is not running.
+2025-06-04 12:09:22,852 - INFO - [voice_service:296] - Porcupine instance deleted.
+2025-06-04 12:11:07,135 - INFO - [logger_config:39] - Logging setup complete.
+2025-06-04 12:11:07,135 - INFO - [main:22] - Application started. Logging to: E:\CC Ai\logs\aura_app.log
+2025-06-04 12:11:07,197 - INFO - [voice_service:76] - Custom keyword file found: E:\CC Ai\aura_core\services\..\..\assets\porcupine_models\Hey-cc_en_windows_v3_0_0.ppn
+2025-06-04 12:11:12,026 - INFO - [voice_service:104] - Porcupine initialized for keyword: 'Hey cc' with paths: ['E:\\CC Ai\\aura_core\\services\\..\\..\\assets\\porcupine_models\\Hey-cc_en_windows_v3_0_0.ppn']
+2025-06-04 12:11:14,663 - INFO - [voice_service:121] - Whisper model 'base.en' loaded.
+2025-06-04 12:11:14,664 - INFO - [main_window:64] - MainWindow initialized.
+2025-06-04 12:11:14,664 - INFO - [gemini_service:28] - GeminiService initialized successfully with gemini-1.5-flash-latest.
+2025-06-04 12:11:14,664 - INFO - [os_interaction_service:13] - OSInteractionService initialized for OS: windows
+2025-06-04 12:11:14,664 - INFO - [perception_agent:13] - PerceptionAgent initialized.
+2025-06-04 12:11:14,665 - INFO - [perception_agent:15] - PerceptionAgent has access to GeminiService for vision tasks.
+2025-06-04 12:11:14,665 - INFO - [nlu_agent:14] - NLUAgent initialized.
+2025-06-04 12:11:14,665 - INFO - [planning_agent:16] - PlanningAgent initialized.
+2025-06-04 12:11:14,665 - INFO - [action_agent:15] - ActionAgent initialized.
+2025-06-04 12:11:14,666 - INFO - [main_orchestrator:35] - MainOrchestrator initialized with NLU, Planning, Action, and Perception agents.
+2025-06-04 12:11:14,666 - INFO - [main:50] - Core backend components initialized.
+2025-06-04 12:11:15,013 - INFO - [main:75] - Main window shown.
+2025-06-04 12:11:21,717 - INFO - [main_window:133] - Command entered via UI text input: open notepad
+2025-06-04 12:11:24,187 - INFO - [gemini_service:52] - Gemini raw response received: ```json
+{
+  "intent": "open_application",
+  "entities": {
+    "application_name": "notepad"
+  }
+}
+```...
+2025-06-04 12:11:24,188 - INFO - [nlu_agent:110] - NLUAgent successfully parsed command. Intent: 'open_application', Entities: {'application_name': 'notepad'}
+2025-06-04 12:11:25,245 - INFO - [gemini_service:52] - Gemini raw response received: ```json
+[
+  {
+    "action_type": "open_application",
+    "parameters": {
+      "application_name": "notepad"
+    }
+  }
+]
+```...
+2025-06-04 12:11:25,245 - INFO - [planning_agent:189] - PlanningAgent generated plan with 1 steps.
+2025-06-04 12:11:25,246 - INFO - [action_agent:31] - ActionAgent executing: 'open_application' with params: {'application_name': 'notepad'}
+2025-06-04 12:11:25,247 - INFO - [os_interaction_service:20] - Attempting to open application: notepad
+2025-06-04 12:11:25,297 - INFO - [os_interaction_service:32] - Successfully initiated opening of notepad.
+2025-06-04 12:11:27,298 - INFO - [action_agent:124] - Action 'open_application' executed successfully.
+2025-06-04 12:11:27,791 - INFO - [main_orchestrator:141] - Plan execution completed.
+2025-06-04 12:12:08,347 - INFO - [main_window:133] - Command entered via UI text input: clear all the things written on notepad window, and write "This ia written by aura ai"
+2025-06-04 12:12:09,488 - INFO - [gemini_service:52] - Gemini raw response received: ```json
+{
+  "intent": "get_information_on_screen",
+  "entities": {
+    "application_name": "Notepad",
+    "query_details": "clear all text and write \"This ia written by aura ai\""
+  }
+}
+```...
+2025-06-04 12:12:09,489 - INFO - [nlu_agent:110] - NLUAgent successfully parsed command. Intent: 'get_information_on_screen', Entities: {'application_name': 'Notepad', 'query_details': 'clear all text and write "This ia written by aura ai"'}
+2025-06-04 12:12:11,443 - INFO - [gemini_service:52] - Gemini raw response received: ```json
+[
+  {
+    "action_type": "open_application",
+    "parameters": {
+      "application_name": "Notepad"
+    }
+  },
+  {
+    "action_type": "press_key",
+    "parameters": {
+      "key_name": [
+    ...
+2025-06-04 12:12:11,444 - INFO - [planning_agent:189] - PlanningAgent generated plan with 4 steps.
+2025-06-04 12:12:11,446 - INFO - [action_agent:31] - ActionAgent executing: 'open_application' with params: {'application_name': 'Notepad'}
+2025-06-04 12:12:11,446 - INFO - [os_interaction_service:20] - Attempting to open application: Notepad
+2025-06-04 12:12:11,470 - INFO - [os_interaction_service:32] - Successfully initiated opening of Notepad.
+2025-06-04 12:12:13,470 - INFO - [action_agent:124] - Action 'open_application' executed successfully.
+2025-06-04 12:12:13,998 - INFO - [action_agent:31] - ActionAgent executing: 'press_key' with params: {'key_name': ['ctrl', 'a']}
+2025-06-04 12:12:13,999 - INFO - [os_interaction_service:61] - Pressing key(s): ['ctrl', 'a']
+2025-06-04 12:12:14,101 - INFO - [os_interaction_service:67] - Key(s) '['ctrl', 'a']' pressed successfully.
+2025-06-04 12:12:14,101 - INFO - [action_agent:124] - Action 'press_key' executed successfully.
+2025-06-04 12:12:14,621 - INFO - [action_agent:31] - ActionAgent executing: 'press_key' with params: {'key_name': 'delete'}
+2025-06-04 12:12:14,621 - INFO - [os_interaction_service:61] - Pressing key(s): delete
+2025-06-04 12:12:14,722 - INFO - [os_interaction_service:67] - Key(s) 'delete' pressed successfully.
+2025-06-04 12:12:14,722 - INFO - [action_agent:124] - Action 'press_key' executed successfully.
+2025-06-04 12:12:15,224 - INFO - [action_agent:31] - ActionAgent executing: 'type_text' with params: {'text': 'This ia written by aura ai'}
+2025-06-04 12:12:15,225 - INFO - [os_interaction_service:47] - Typing text: 'This ia written by aura ai...'
+2025-06-04 12:12:15,643 - INFO - [os_interaction_service:50] - Text typed successfully.
+2025-06-04 12:12:15,643 - INFO - [action_agent:124] - Action 'type_text' executed successfully.
+2025-06-04 12:12:16,160 - INFO - [main_orchestrator:141] - Plan execution completed.
+2025-06-04 12:12:28,488 - INFO - [main_window:239] - MainWindow closeEvent triggered. Stopping voice service if active...
+2025-06-04 12:12:28,489 - INFO - [voice_service:290] - Voice service is not running.
+2025-06-04 12:12:28,489 - INFO - [main_window:242] - Aura application is preparing to shut down.
+2025-06-04 12:12:28,501 - INFO - [main:79] - Application exited normally via sys.exit().
+2025-06-04 12:12:28,501 - INFO - [main:85] - Aura application is shutting down.
+2025-06-04 12:12:28,627 - INFO - [voice_service:290] - Voice service is not running.
+2025-06-04 12:12:28,628 - INFO - [voice_service:296] - Porcupine instance deleted.
+2025-06-04 12:35:01,261 - INFO - [logger_config:39] - Logging setup complete.
+2025-06-04 12:35:01,261 - INFO - [main:22] - Application started. Logging to: E:\CC Ai\logs\aura_app.log
+2025-06-04 12:35:01,336 - INFO - [voice_service:76] - Custom keyword file found: E:\CC Ai\aura_core\services\..\..\assets\porcupine_models\Hey-cc_en_windows_v3_0_0.ppn
+2025-06-04 12:35:06,466 - INFO - [voice_service:104] - Porcupine initialized for keyword: 'Hey cc' with paths: ['E:\\CC Ai\\aura_core\\services\\..\\..\\assets\\porcupine_models\\Hey-cc_en_windows_v3_0_0.ppn']
+2025-06-04 12:35:09,468 - INFO - [voice_service:121] - Whisper model 'base.en' loaded.
+2025-06-04 12:35:09,469 - INFO - [main_window:64] - MainWindow initialized.
+2025-06-04 12:35:09,475 - INFO - [gemini_service:28] - GeminiService initialized successfully with gemini-1.5-flash-latest.
+2025-06-04 12:35:09,476 - INFO - [os_interaction_service:14] - OSInteractionService initialized for OS: windows
+2025-06-04 12:35:09,476 - INFO - [perception_agent:13] - PerceptionAgent initialized.
+2025-06-04 12:35:09,476 - INFO - [perception_agent:15] - PerceptionAgent has access to GeminiService for vision tasks.
+2025-06-04 12:35:09,476 - INFO - [nlu_agent:14] - NLUAgent initialized.
+2025-06-04 12:35:09,476 - INFO - [planning_agent:14] - PlanningAgent initialized.
+2025-06-04 12:35:09,476 - INFO - [action_agent:17] - ActionAgent initialized.
+2025-06-04 12:35:09,477 - INFO - [main_orchestrator:35] - MainOrchestrator initialized with NLU, Planning, Action, and Perception agents.
+2025-06-04 12:35:09,477 - INFO - [main:50] - Core backend components initialized.
+2025-06-04 12:35:10,065 - INFO - [main:75] - Main window shown.
+2025-06-04 12:35:16,610 - INFO - [main_window:133] - Command entered via UI text input: open notepad
+2025-06-04 12:35:18,974 - INFO - [gemini_service:52] - Gemini raw response received: ```json
+{
+  "intent": "open_application",
+  "entities": {
+    "application_name": "notepad"
+  }
+}
+```...
+2025-06-04 12:35:18,975 - INFO - [nlu_agent:110] - NLUAgent successfully parsed command. Intent: 'open_application', Entities: {'application_name': 'notepad'}
+2025-06-04 12:35:19,952 - INFO - [gemini_service:52] - Gemini raw response received: ```json
+[
+  {
+    "action_type": "open_application",
+    "parameters": {
+      "application_name": "notepad",
+      "activate_if_running": true
+    }
+  }
+]
+```...
+2025-06-04 12:35:19,953 - INFO - [planning_agent:200] - PlanningAgent generated plan with 1 steps.
+2025-06-04 12:35:19,954 - INFO - [action_agent:25] - ActionAgent executing: 'open_application' with params: {'application_name': 'notepad', 'activate_if_running': True}, context: {}
+2025-06-04 12:35:19,954 - INFO - [os_interaction_service:84] - Attempting to manage application: notepad
+2025-06-04 12:35:19,955 - INFO - [os_interaction_service:27] - No window found with title containing 'Notepad'.
+2025-06-04 12:35:19,955 - INFO - [os_interaction_service:104] - No readily identifiable existing window for 'notepad'. Will attempt to launch new.
+2025-06-04 12:35:20,003 - INFO - [os_interaction_service:117] - Successfully initiated opening of new instance of notepad.
+2025-06-04 12:35:22,504 - INFO - [os_interaction_service:27] - No window found with title containing 'Untitled - Notepad'.
+2025-06-04 12:35:22,505 - INFO - [os_interaction_service:25] - Found window(s) matching 'notepad': ['fpv.py - Notepad']
+2025-06-04 12:35:22,505 - INFO - [os_interaction_service:65] - Activated window: 'fpv.py - Notepad'
+2025-06-04 12:35:23,006 - INFO - [os_interaction_service:132] - Successfully activated newly opened window: 'fpv.py - Notepad'
+2025-06-04 12:35:23,006 - INFO - [action_agent:50] - Context updated with opened app info: {'last_opened_window_title': 'fpv.py - Notepad', 'last_opened_app_name': 'notepad'}
+2025-06-04 12:35:23,007 - INFO - [action_agent:173] - Action 'open_application' executed successfully.
+2025-06-04 12:35:23,505 - INFO - [main_orchestrator:141] - Plan execution completed.
+2025-06-04 12:35:45,381 - INFO - [main_window:133] - Command entered via UI text input: clear the comple notepad window, and write hello on it
+2025-06-04 12:35:46,371 - INFO - [gemini_service:52] - Gemini raw response received: ```json
+{
+  "intent": "get_information_on_screen",
+  "entities": {
+    "application_name": "Notepad",
+    "query_details": "clear the notepad window"
+  }
+}
+```...
+2025-06-04 12:35:46,372 - INFO - [nlu_agent:110] - NLUAgent successfully parsed command. Intent: 'get_information_on_screen', Entities: {'application_name': 'Notepad', 'query_details': 'clear the notepad window'}
+2025-06-04 12:35:47,984 - INFO - [gemini_service:52] - Gemini raw response received: ```json
+[
+  {
+    "action_type": "activate_window",
+    "parameters": {
+      "window_title_hint": "Notepad"
+    }
+  },
+  {
+    "action_type": "clear_text_in_window",
+    "parameters": {
+      "target...
+2025-06-04 12:35:47,985 - INFO - [planning_agent:200] - PlanningAgent generated plan with 2 steps.
+2025-06-04 12:35:47,986 - INFO - [action_agent:25] - ActionAgent executing: 'activate_window' with params: {'window_title_hint': 'Notepad'}, context: {}
+2025-06-04 12:35:47,987 - INFO - [os_interaction_service:25] - Found window(s) matching 'Notepad': ['fpv.py - Notepad']
+2025-06-04 12:35:47,992 - INFO - [os_interaction_service:65] - Activated window: 'fpv.py - Notepad'
+2025-06-04 12:35:48,494 - INFO - [action_agent:173] - Action 'activate_window' executed successfully.
+2025-06-04 12:35:49,013 - INFO - [action_agent:25] - ActionAgent executing: 'clear_text_in_window' with params: {'target_window_title': 'Notepad'}, context: {}
+2025-06-04 12:35:49,015 - INFO - [action_agent:102] - Attempting to clear text in window: Notepad
+2025-06-04 12:35:49,015 - INFO - [os_interaction_service:25] - Found window(s) matching 'Notepad': ['fpv.py - Notepad']
+2025-06-04 12:35:49,015 - INFO - [os_interaction_service:65] - Activated window: 'fpv.py - Notepad'
+2025-06-04 12:35:49,516 - INFO - [os_interaction_service:170] - Pressing key(s): ['ctrl', 'a'] in 'Notepad'
+2025-06-04 12:35:49,717 - INFO - [os_interaction_service:25] - Found window(s) matching 'Notepad': ['fpv.py - Notepad']
+2025-06-04 12:35:49,717 - INFO - [os_interaction_service:65] - Activated window: 'fpv.py - Notepad'
+2025-06-04 12:35:50,218 - INFO - [os_interaction_service:170] - Pressing key(s): delete in 'Notepad'
+2025-06-04 12:35:50,319 - INFO - [action_agent:173] - Action 'clear_text_in_window' executed successfully.
+2025-06-04 12:35:50,825 - INFO - [main_orchestrator:141] - Plan execution completed.
+2025-06-04 12:36:21,480 - INFO - [main_window:133] - Command entered via UI text input: write hello on it
+2025-06-04 12:36:22,419 - INFO - [gemini_service:52] - Gemini raw response received: ```json
+{
+  "intent": "get_information_on_screen",
+  "entities": {
+    "query_details": "write hello on it"
+  }
+}
+```...
+2025-06-04 12:36:22,419 - INFO - [nlu_agent:110] - NLUAgent successfully parsed command. Intent: 'get_information_on_screen', Entities: {'query_details': 'write hello on it'}
+2025-06-04 12:36:24,286 - INFO - [gemini_service:52] - Gemini raw response received: ```json
+[
+  {
+    "action_type": "get_info_from_screen",
+    "parameters": {
+      "query_details": "write hello on it",
+      "store_result_as": "screen_information"
+    }
+  },
+  {
+    "action_type":...
+2025-06-04 12:36:24,287 - INFO - [planning_agent:200] - PlanningAgent generated plan with 2 steps.
+2025-06-04 12:36:24,290 - INFO - [action_agent:25] - ActionAgent executing: 'get_info_from_screen' with params: {'query_details': 'write hello on it', 'store_result_as': 'screen_information'}, context: {}
+2025-06-04 12:36:24,292 - INFO - [perception_agent:39] - PerceptionAgent: Analyzing screen for: 'write hello on it'
+2025-06-04 12:36:24,292 - INFO - [os_interaction_service:199] - Taking screenshot of region 'full screen' using PyAutoGUI.
+2025-06-04 12:36:24,489 - INFO - [os_interaction_service:210] - Screenshot captured successfully (270153 bytes).
+2025-06-04 12:36:27,662 - INFO - [gemini_service:98] - Gemini vision response received: "write hello on it" is visible in the lower left part of the screen.
+...
+2025-06-04 12:36:27,662 - INFO - [perception_agent:73] - PerceptionAgent: Gemini vision analysis result: "write hello on it" is visible in the lower left part of the screen....
+2025-06-04 12:36:27,663 - INFO - [action_agent:131] - Perception found: '"write hello on it" is visible in the lower left p...'. Storing as 'screen_information'.
+2025-06-04 12:36:27,663 - INFO - [action_agent:173] - Action 'get_info_from_screen' executed successfully.
+2025-06-04 12:36:28,178 - INFO - [action_agent:25] - ActionAgent executing: 'log_message' with params: {'message': 'The information on the screen is: {{screen_information}}', 'level': 'info'}, context: {'screen_information': '"write hello on it" is visible in the lower left part of the screen.'}
+2025-06-04 12:36:28,178 - INFO - [action_agent:152] - PLAN_LOG: The information on the screen is: "write hello on it" is visible in the lower left part of the screen.
+2025-06-04 12:36:28,178 - INFO - [action_agent:173] - Action 'log_message' executed successfully.
+2025-06-04 12:36:28,685 - INFO - [main_orchestrator:141] - Plan execution completed.
+2025-06-04 12:37:04,777 - INFO - [main_window:133] - Command entered via UI text input: write hello on the already, opened notepad window
+2025-06-04 12:37:05,790 - INFO - [gemini_service:52] - Gemini raw response received: ```json
+{
+  "intent": "get_information_on_screen",
+  "entities": {
+    "query_details": "write hello on the already, opened notepad window"
+  }
+}
+```...
+2025-06-04 12:37:05,791 - INFO - [nlu_agent:110] - NLUAgent successfully parsed command. Intent: 'get_information_on_screen', Entities: {'query_details': 'write hello on the already, opened notepad window'}
+2025-06-04 12:37:07,204 - INFO - [gemini_service:52] - Gemini raw response received: ```json
+[
+  {
+    "action_type": "get_info_from_screen",
+    "parameters": {
+      "query_details": "write hello on the already, opened notepad window",
+      "store_result_as": "screen_information"
+ ...
+2025-06-04 12:37:07,205 - INFO - [planning_agent:200] - PlanningAgent generated plan with 1 steps.
+2025-06-04 12:37:07,206 - INFO - [action_agent:25] - ActionAgent executing: 'get_info_from_screen' with params: {'query_details': 'write hello on the already, opened notepad window', 'store_result_as': 'screen_information'}, context: {}
+2025-06-04 12:37:07,206 - INFO - [perception_agent:39] - PerceptionAgent: Analyzing screen for: 'write hello on the already, opened notepad window'
+2025-06-04 12:37:07,206 - INFO - [os_interaction_service:199] - Taking screenshot of region 'full screen' using PyAutoGUI.
+2025-06-04 12:37:07,318 - INFO - [os_interaction_service:210] - Screenshot captured successfully (298906 bytes).
+2025-06-04 12:37:10,996 - INFO - [gemini_service:98] - Gemini vision response received: The text "write hello on the already, opened notepad window" is visible in the bottom part of the Aura - AI Desktop Assistant window.
+...
+2025-06-04 12:37:10,997 - INFO - [perception_agent:73] - PerceptionAgent: Gemini vision analysis result: The text "write hello on the already, opened notepad window" is visible in the bottom part of the Aura - AI Desktop Assistant window....
+2025-06-04 12:37:10,997 - INFO - [action_agent:131] - Perception found: 'The text "write hello on the already, opened notep...'. Storing as 'screen_information'.
+2025-06-04 12:37:10,997 - INFO - [action_agent:173] - Action 'get_info_from_screen' executed successfully.
+2025-06-04 12:37:11,487 - INFO - [main_orchestrator:141] - Plan execution completed.
+2025-06-04 12:37:24,015 - INFO - [main_window:239] - MainWindow closeEvent triggered. Stopping voice service if active...
+2025-06-04 12:37:24,016 - INFO - [voice_service:290] - Voice service is not running.
+2025-06-04 12:37:24,016 - INFO - [main_window:242] - Aura application is preparing to shut down.
+2025-06-04 12:37:24,027 - INFO - [main:79] - Application exited normally via sys.exit().
+2025-06-04 12:37:24,028 - INFO - [main:85] - Aura application is shutting down.
+2025-06-04 12:37:24,152 - INFO - [voice_service:290] - Voice service is not running.
+2025-06-04 12:37:24,152 - INFO - [voice_service:296] - Porcupine instance deleted.
+2025-06-04 12:47:01,903 - INFO - [logger_config:39] - Logging setup complete.
+2025-06-04 12:47:01,903 - INFO - [main:22] - Application started. Logging to: E:\CC Ai\logs\aura_app.log
+2025-06-04 12:47:01,975 - INFO - [voice_service:76] - Custom keyword file found: E:\CC Ai\aura_core\services\..\..\assets\porcupine_models\Hey-cc_en_windows_v3_0_0.ppn
+2025-06-04 12:47:06,858 - INFO - [voice_service:104] - Porcupine initialized for keyword: 'Hey cc' with paths: ['E:\\CC Ai\\aura_core\\services\\..\\..\\assets\\porcupine_models\\Hey-cc_en_windows_v3_0_0.ppn']
+2025-06-04 12:47:09,506 - INFO - [voice_service:121] - Whisper model 'base.en' loaded.
+2025-06-04 12:47:09,507 - INFO - [main_window:64] - MainWindow initialized.
+2025-06-04 12:47:09,507 - INFO - [gemini_service:28] - GeminiService initialized successfully with gemini-1.5-flash-latest.
+2025-06-04 12:47:09,507 - INFO - [os_interaction_service:14] - OSInteractionService initialized for OS: windows
+2025-06-04 12:47:09,508 - INFO - [perception_agent:13] - PerceptionAgent initialized.
+2025-06-04 12:47:09,508 - INFO - [perception_agent:15] - PerceptionAgent has access to GeminiService for vision tasks.
+2025-06-04 12:47:09,508 - INFO - [nlu_agent:14] - NLUAgent initialized.
+2025-06-04 12:47:09,508 - INFO - [planning_agent:14] - PlanningAgent initialized.
+2025-06-04 12:47:09,509 - INFO - [action_agent:17] - ActionAgent initialized.
+2025-06-04 12:47:09,509 - INFO - [main_orchestrator:34] - MainOrchestrator initialized with NLU, Planning, Action, and Perception agents.
+2025-06-04 12:47:09,509 - INFO - [main:50] - Core backend components initialized.
+2025-06-04 12:47:10,044 - INFO - [main:75] - Main window shown.
+2025-06-04 12:47:15,852 - INFO - [main_window:168] - User toggled voice listening ON.
+2025-06-04 12:47:15,852 - INFO - [voice_service:276] - Voice service started listening.
+2025-06-04 12:47:16,335 - INFO - [voice_service:142] - Audio stream opened. Listening for wake word 'Hey cc'...
+2025-06-04 12:47:17,749 - INFO - [voice_service:152] - Wake word 'Hey cc' detected!
+2025-06-04 12:47:17,750 - INFO - [voice_service:184] - Recording command...
+2025-06-04 12:47:19,768 - INFO - [voice_service:211] - Silence detected, stopping command recording.
+2025-06-04 12:47:19,768 - INFO - [voice_service:225] - Recording finished. 63 frames captured. Transcribing...
+2025-06-04 12:47:21,652 - INFO - [voice_service:243] - Whisper transcription: 'Open notepad.'
+2025-06-04 12:47:21,654 - INFO - [voice_service:161] - Resuming listening for wake word 'Hey cc'...
+2025-06-04 12:47:22,639 - INFO - [gemini_service:52] - Gemini raw response received: ```json
+{
+  "intent": "open_application",
+  "entities": {
+    "application_name": "Notepad"
+  }
+}
+```...
+2025-06-04 12:47:22,639 - INFO - [nlu_agent:156] - NLUAgent successfully parsed command. Intent: 'open_application', Entities: {'application_name': 'Notepad'}
+2025-06-04 12:47:22,640 - INFO - [main_orchestrator:71] - NLU provided/resolved application_name: 'Notepad'. Updating context.
+2025-06-04 12:47:23,799 - INFO - [gemini_service:52] - Gemini raw response received: ```json
+[
+  {
+    "action_type": "open_application",
+    "parameters": {
+      "application_name": "Notepad",
+      "activate_if_running": true
+    }
+  }
+]
+```...
+2025-06-04 12:47:23,800 - INFO - [planning_agent:200] - PlanningAgent generated plan with 1 steps.
+2025-06-04 12:47:23,801 - INFO - [action_agent:25] - ActionAgent executing: 'open_application' with params: {'application_name': 'Notepad', 'activate_if_running': True}, context: {'last_opened_app_name': 'Notepad'}
+2025-06-04 12:47:23,802 - INFO - [os_interaction_service:84] - Attempting to manage application: Notepad
+2025-06-04 12:47:23,802 - INFO - [os_interaction_service:27] - No window found with title containing 'Notepad'.
+2025-06-04 12:47:23,803 - INFO - [os_interaction_service:104] - No readily identifiable existing window for 'Notepad'. Will attempt to launch new.
+2025-06-04 12:47:23,840 - INFO - [os_interaction_service:117] - Successfully initiated opening of new instance of Notepad.
+2025-06-04 12:47:26,341 - INFO - [os_interaction_service:27] - No window found with title containing 'Untitled - Notepad'.
+2025-06-04 12:47:26,342 - INFO - [os_interaction_service:25] - Found window(s) matching 'Notepad': ['*fpv.py - Notepad']
+2025-06-04 12:47:26,342 - INFO - [os_interaction_service:65] - Activated window: '*fpv.py - Notepad'
+2025-06-04 12:47:26,843 - INFO - [os_interaction_service:132] - Successfully activated newly opened window: '*fpv.py - Notepad'
+2025-06-04 12:47:26,843 - INFO - [action_agent:50] - Context updated with opened app info: {'last_opened_window_title': '*fpv.py - Notepad', 'last_opened_app_name': 'Notepad'}
+2025-06-04 12:47:26,843 - INFO - [action_agent:173] - Action 'open_application' executed successfully.
+2025-06-04 12:47:27,347 - INFO - [main_orchestrator:173] - Plan execution completed.
+2025-06-04 12:47:27,955 - INFO - [voice_service:152] - Wake word 'Hey cc' detected!
+2025-06-04 12:47:27,955 - INFO - [voice_service:184] - Recording command...
+2025-06-04 12:47:29,964 - INFO - [voice_service:211] - Silence detected, stopping command recording.
+2025-06-04 12:47:29,964 - INFO - [voice_service:225] - Recording finished. 63 frames captured. Transcribing...
+2025-06-04 12:47:30,506 - INFO - [voice_service:243] - Whisper transcription: 'Right, hello.'
+2025-06-04 12:47:30,508 - INFO - [voice_service:161] - Resuming listening for wake word 'Hey cc'...
+2025-06-04 12:47:31,506 - INFO - [gemini_service:52] - Gemini raw response received: ```json
+{
+  "intent": "type_text_in_application",
+  "entities": {
+    "application_name": "Notepad",
+    "text_to_type": "Right, hello."
+  }
+}
+```...
+2025-06-04 12:47:31,507 - INFO - [nlu_agent:156] - NLUAgent successfully parsed command. Intent: 'type_text_in_application', Entities: {'application_name': 'Notepad', 'text_to_type': 'Right, hello.'}
+2025-06-04 12:47:33,125 - INFO - [gemini_service:52] - Gemini raw response received: ```json
+[
+  {
+    "action_type": "open_application",
+    "parameters": {
+      "application_name": "Notepad",
+      "activate_if_running": true
+    }
+  },
+  {
+    "action_type": "type_text",
+    "para...
+2025-06-04 12:47:33,125 - INFO - [planning_agent:200] - PlanningAgent generated plan with 2 steps.
+2025-06-04 12:47:33,127 - INFO - [action_agent:25] - ActionAgent executing: 'open_application' with params: {'application_name': 'Notepad', 'activate_if_running': True}, context: {'last_opened_app_name': 'Notepad', 'last_opened_window_title': '*fpv.py - Notepad'}
+2025-06-04 12:47:33,127 - INFO - [os_interaction_service:84] - Attempting to manage application: Notepad
+2025-06-04 12:47:33,128 - INFO - [os_interaction_service:25] - Found window(s) matching 'Notepad': ['*fpv.py - Notepad']
+2025-06-04 12:47:33,128 - INFO - [os_interaction_service:97] - Found existing window for 'Notepad': '*fpv.py - Notepad'. Activating it.
+2025-06-04 12:47:33,128 - INFO - [os_interaction_service:65] - Activated window: '*fpv.py - Notepad'
+2025-06-04 12:47:33,629 - INFO - [action_agent:50] - Context updated with opened app info: {'last_opened_window_title': '*fpv.py - Notepad', 'last_opened_app_name': 'Notepad'}
+2025-06-04 12:47:33,629 - INFO - [action_agent:173] - Action 'open_application' executed successfully.
+2025-06-04 12:47:34,148 - INFO - [action_agent:25] - ActionAgent executing: 'type_text' with params: {'text': 'Right, hello.', 'target_window_title': '{{last_opened_window_title}}'}, context: {'last_opened_app_name': 'Notepad', 'last_opened_window_title': '*fpv.py - Notepad'}
+2025-06-04 12:47:34,150 - INFO - [action_agent:34] - Resolved target_window_title from context to: '*fpv.py - Notepad'
+2025-06-04 12:47:34,150 - INFO - [os_interaction_service:25] - Found window(s) matching '*fpv.py - Notepad': ['*fpv.py - Notepad']
+2025-06-04 12:47:34,151 - INFO - [os_interaction_service:65] - Activated window: '*fpv.py - Notepad'
+2025-06-04 12:47:34,651 - INFO - [os_interaction_service:153] - Typing text: 'Right, hello....' in '*fpv.py - Notepad'
+2025-06-04 12:47:34,889 - INFO - [action_agent:173] - Action 'type_text' executed successfully.
+2025-06-04 12:47:35,386 - INFO - [main_orchestrator:173] - Plan execution completed.
+2025-06-04 12:47:47,940 - INFO - [voice_service:152] - Wake word 'Hey cc' detected!
+2025-06-04 12:47:47,940 - INFO - [voice_service:184] - Recording command...
+2025-06-04 12:47:49,960 - INFO - [voice_service:211] - Silence detected, stopping command recording.
+2025-06-04 12:47:49,961 - INFO - [voice_service:225] - Recording finished. 63 frames captured. Transcribing...
+2025-06-04 12:47:50,510 - INFO - [voice_service:243] - Whisper transcription: 'How are you?'
+2025-06-04 12:47:50,512 - INFO - [voice_service:161] - Resuming listening for wake word 'Hey cc'...
+2025-06-04 12:47:51,452 - INFO - [gemini_service:52] - Gemini raw response received: ```json
+{
+  "intent": "unknown_command",
+  "entities": {}
+}
+```...
+2025-06-04 12:47:51,452 - INFO - [nlu_agent:156] - NLUAgent successfully parsed command. Intent: 'unknown_command', Entities: {}
+2025-06-04 12:47:58,343 - INFO - [voice_service:152] - Wake word 'Hey cc' detected!
+2025-06-04 12:47:58,344 - INFO - [voice_service:184] - Recording command...
+2025-06-04 12:48:00,364 - INFO - [voice_service:211] - Silence detected, stopping command recording.
+2025-06-04 12:48:00,364 - INFO - [voice_service:225] - Recording finished. 63 frames captured. Transcribing...
+2025-06-04 12:48:00,845 - INFO - [voice_service:243] - Whisper transcription: 'Close yourself.'
+2025-06-04 12:48:00,847 - INFO - [voice_service:161] - Resuming listening for wake word 'Hey cc'...
+2025-06-04 12:48:01,798 - INFO - [gemini_service:52] - Gemini raw response received: ```json
+{
+  "intent": "close_application",
+  "entities": {
+    "application_name": "Aura"
+  }
+}
+```...
+2025-06-04 12:48:01,800 - INFO - [nlu_agent:156] - NLUAgent successfully parsed command. Intent: 'close_application', Entities: {'application_name': 'Aura'}
+2025-06-04 12:48:01,800 - INFO - [main_orchestrator:71] - NLU provided/resolved application_name: 'Aura'. Updating context.
+2025-06-04 12:48:03,144 - INFO - [gemini_service:52] - Gemini raw response received: ```json
+[
+  {
+    "action_type": "close_application",
+    "parameters": {
+      "application_name": "Aura"
+    }
+  }
+]
+```...
+2025-06-04 12:48:03,145 - INFO - [planning_agent:200] - PlanningAgent generated plan with 1 steps.
+2025-06-04 12:48:03,146 - INFO - [action_agent:25] - ActionAgent executing: 'close_application' with params: {'application_name': 'Aura'}, context: {'last_opened_app_name': 'Aura'}
+2025-06-04 12:48:03,146 - WARNING - [action_agent:169] - Unknown or not implemented action_type: 'close_application'
+2025-06-04 12:48:03,146 - ERROR - [action_agent:175] - Action 'close_application' failed or not fully implemented.
+2025-06-04 12:48:03,147 - ERROR - [main_orchestrator:164] - Plan execution halted at step 1 due to action failure.
+2025-06-04 12:48:18,569 - INFO - [voice_service:152] - Wake word 'Hey cc' detected!
+2025-06-04 12:48:18,569 - INFO - [voice_service:184] - Recording command...
+2025-06-04 12:48:20,588 - INFO - [voice_service:211] - Silence detected, stopping command recording.
+2025-06-04 12:48:20,588 - INFO - [voice_service:225] - Recording finished. 63 frames captured. Transcribing...
+2025-06-04 12:48:21,061 - INFO - [voice_service:243] - Whisper transcription: ''
+2025-06-04 12:48:21,062 - INFO - [voice_service:248] - Whisper returned empty transcription.
+2025-06-04 12:48:21,063 - INFO - [voice_service:161] - Resuming listening for wake word 'Hey cc'...
+2025-06-04 12:48:26,693 - INFO - [voice_service:152] - Wake word 'Hey cc' detected!
+2025-06-04 12:48:26,693 - INFO - [voice_service:184] - Recording command...
+2025-06-04 12:48:28,703 - INFO - [voice_service:211] - Silence detected, stopping command recording.
+2025-06-04 12:48:28,704 - INFO - [voice_service:225] - Recording finished. 63 frames captured. Transcribing...
+2025-06-04 12:48:32,019 - INFO - [voice_service:243] - Whisper transcription: 'brew with your'
+2025-06-04 12:48:32,021 - INFO - [voice_service:161] - Resuming listening for wake word 'Hey cc'...
+2025-06-04 12:48:32,959 - INFO - [gemini_service:52] - Gemini raw response received: ```json
+{
+  "intent": "search_web",
+  "entities": {
+    "search_query": "brew with your"
+  }
+}
+```...
+2025-06-04 12:48:32,960 - INFO - [nlu_agent:156] - NLUAgent successfully parsed command. Intent: 'search_web', Entities: {'search_query': 'brew with your'}
+2025-06-04 12:48:34,497 - INFO - [gemini_service:52] - Gemini raw response received: ```json
+[
+  {
+    "action_type": "search_web",
+    "parameters": {
+      "search_query": "brew with your"
+    }
+  }
+]
+```...
+2025-06-04 12:48:34,497 - INFO - [planning_agent:200] - PlanningAgent generated plan with 1 steps.
+2025-06-04 12:48:34,499 - INFO - [action_agent:25] - ActionAgent executing: 'search_web' with params: {'search_query': 'brew with your'}, context: {'last_opened_app_name': 'Aura', 'error': 'Unknown action type: close_application'}
+2025-06-04 12:48:34,499 - WARNING - [action_agent:169] - Unknown or not implemented action_type: 'search_web'
+2025-06-04 12:48:34,499 - ERROR - [action_agent:175] - Action 'search_web' failed or not fully implemented.
+2025-06-04 12:48:34,499 - ERROR - [main_orchestrator:164] - Plan execution halted at step 1 due to action failure.
+2025-06-04 12:48:41,902 - INFO - [voice_service:152] - Wake word 'Hey cc' detected!
+2025-06-04 12:48:41,903 - INFO - [voice_service:184] - Recording command...
+2025-06-04 12:48:43,922 - INFO - [voice_service:211] - Silence detected, stopping command recording.
+2025-06-04 12:48:43,922 - INFO - [voice_service:225] - Recording finished. 63 frames captured. Transcribing...
+2025-06-04 12:48:44,437 - INFO - [voice_service:243] - Whisper transcription: 'Open WhatsApp.'
+2025-06-04 12:48:44,439 - INFO - [voice_service:161] - Resuming listening for wake word 'Hey cc'...
+2025-06-04 12:48:45,234 - INFO - [gemini_service:52] - Gemini raw response received: ```json
+{
+  "intent": "open_application",
+  "entities": {
+    "application_name": "WhatsApp"
+  }
+}
+```...
+2025-06-04 12:48:45,234 - INFO - [nlu_agent:156] - NLUAgent successfully parsed command. Intent: 'open_application', Entities: {'application_name': 'WhatsApp'}
+2025-06-04 12:48:45,234 - INFO - [main_orchestrator:71] - NLU provided/resolved application_name: 'WhatsApp'. Updating context.
+2025-06-04 12:48:46,740 - INFO - [gemini_service:52] - Gemini raw response received: ```json
+[
+  {
+    "action_type": "open_application",
+    "parameters": {
+      "application_name": "WhatsApp",
+      "activate_if_running": true
+    }
+  }
+]
+```...
+2025-06-04 12:48:46,741 - INFO - [planning_agent:200] - PlanningAgent generated plan with 1 steps.
+2025-06-04 12:48:46,742 - INFO - [action_agent:25] - ActionAgent executing: 'open_application' with params: {'application_name': 'WhatsApp', 'activate_if_running': True}, context: {'last_opened_app_name': 'WhatsApp', 'error': 'Unknown action type: search_web'}
+2025-06-04 12:48:46,742 - INFO - [os_interaction_service:84] - Attempting to manage application: WhatsApp
+2025-06-04 12:48:46,743 - INFO - [os_interaction_service:27] - No window found with title containing 'WhatsApp'.
+2025-06-04 12:48:46,743 - INFO - [os_interaction_service:104] - No readily identifiable existing window for 'WhatsApp'. Will attempt to launch new.
+2025-06-04 12:48:46,745 - ERROR - [os_interaction_service:142] - Application 'WhatsApp' not found. Ensure it's in PATH or provide full path.
+2025-06-04 12:48:46,745 - ERROR - [action_agent:175] - Action 'open_application' failed or not fully implemented.
+2025-06-04 12:48:46,746 - ERROR - [main_orchestrator:164] - Plan execution halted at step 1 due to action failure.
+2025-06-04 12:48:57,040 - INFO - [voice_service:152] - Wake word 'Hey cc' detected!
+2025-06-04 12:48:57,040 - INFO - [voice_service:184] - Recording command...
+2025-06-04 12:48:59,060 - INFO - [voice_service:211] - Silence detected, stopping command recording.
+2025-06-04 12:48:59,060 - INFO - [voice_service:225] - Recording finished. 63 frames captured. Transcribing...
+2025-06-04 12:48:59,554 - INFO - [voice_service:243] - Whisper transcription: 'Open WhatsApp.'
+2025-06-04 12:48:59,556 - INFO - [voice_service:161] - Resuming listening for wake word 'Hey cc'...
+2025-06-04 12:49:00,507 - INFO - [gemini_service:52] - Gemini raw response received: ```json
+{
+  "intent": "open_application",
+  "entities": {
+    "application_name": "WhatsApp"
+  }
+}
+```...
+2025-06-04 12:49:00,508 - INFO - [nlu_agent:156] - NLUAgent successfully parsed command. Intent: 'open_application', Entities: {'application_name': 'WhatsApp'}
+2025-06-04 12:49:01,950 - INFO - [gemini_service:52] - Gemini raw response received: ```json
+[
+  {
+    "action_type": "open_application",
+    "parameters": {
+      "application_name": "WhatsApp",
+      "activate_if_running": true
+    }
+  }
+]
+```...
+2025-06-04 12:49:01,951 - INFO - [planning_agent:200] - PlanningAgent generated plan with 1 steps.
+2025-06-04 12:49:01,952 - INFO - [action_agent:25] - ActionAgent executing: 'open_application' with params: {'application_name': 'WhatsApp', 'activate_if_running': True}, context: {'last_opened_app_name': 'WhatsApp', 'error': 'Failed to open or manage WhatsApp'}
+2025-06-04 12:49:01,952 - INFO - [os_interaction_service:84] - Attempting to manage application: WhatsApp
+2025-06-04 12:49:01,953 - INFO - [os_interaction_service:27] - No window found with title containing 'WhatsApp'.
+2025-06-04 12:49:01,953 - INFO - [os_interaction_service:104] - No readily identifiable existing window for 'WhatsApp'. Will attempt to launch new.
+2025-06-04 12:49:01,955 - ERROR - [os_interaction_service:142] - Application 'WhatsApp' not found. Ensure it's in PATH or provide full path.
+2025-06-04 12:49:01,955 - ERROR - [action_agent:175] - Action 'open_application' failed or not fully implemented.
+2025-06-04 12:49:01,956 - ERROR - [main_orchestrator:164] - Plan execution halted at step 1 due to action failure.
+2025-06-04 12:49:22,845 - INFO - [main_window:239] - MainWindow closeEvent triggered. Stopping voice service if active...
+2025-06-04 12:49:22,845 - INFO - [voice_service:284] - Attempting to stop voice service...
+2025-06-04 12:49:22,880 - INFO - [voice_service:175] - Audio processing stopped.
+2025-06-04 12:49:22,881 - INFO - [voice_service:288] - Voice service stopped.
+2025-06-04 12:49:22,881 - INFO - [main_window:242] - Aura application is preparing to shut down.
+2025-06-04 12:49:22,892 - INFO - [main:79] - Application exited normally via sys.exit().
+2025-06-04 12:49:22,892 - INFO - [main:85] - Aura application is shutting down.
+2025-06-04 12:49:23,017 - INFO - [voice_service:290] - Voice service is not running.
+2025-06-04 12:49:23,018 - INFO - [voice_service:296] - Porcupine instance deleted.
+2025-06-04 13:01:11,727 - INFO - [logger_config:39] - Logging setup complete.
+2025-06-04 13:01:11,728 - INFO - [main:22] - Application started. Logging to: E:\CC Ai\logs\aura_app.log
+2025-06-04 13:01:11,792 - INFO - [voice_service:76] - Custom keyword file found: E:\CC Ai\aura_core\services\..\..\assets\porcupine_models\Hey-cc_en_windows_v3_0_0.ppn
+2025-06-04 13:01:16,601 - INFO - [voice_service:104] - Porcupine initialized for keyword: 'Hey cc' with paths: ['E:\\CC Ai\\aura_core\\services\\..\\..\\assets\\porcupine_models\\Hey-cc_en_windows_v3_0_0.ppn']
+2025-06-04 13:01:19,261 - INFO - [voice_service:121] - Whisper model 'base.en' loaded.
+2025-06-04 13:01:19,262 - INFO - [main_window:64] - MainWindow initialized.
+2025-06-04 13:01:19,263 - INFO - [gemini_service:28] - GeminiService initialized successfully with gemini-1.5-flash-latest.
+2025-06-04 13:01:19,263 - INFO - [os_interaction_service:15] - OSInteractionService initialized for OS: windows
+2025-06-04 13:01:19,263 - INFO - [perception_agent:13] - PerceptionAgent initialized.
+2025-06-04 13:01:19,263 - INFO - [perception_agent:15] - PerceptionAgent has access to GeminiService for vision tasks.
+2025-06-04 13:01:19,263 - INFO - [nlu_agent:14] - NLUAgent initialized.
+2025-06-04 13:01:19,265 - INFO - [planning_agent:14] - PlanningAgent initialized.
+2025-06-04 13:01:19,265 - INFO - [action_agent:16] - ActionAgent initialized.
+2025-06-04 13:01:19,265 - INFO - [main_orchestrator:34] - MainOrchestrator initialized with NLU, Planning, Action, and Perception agents.
+2025-06-04 13:01:19,265 - INFO - [main:50] - Core backend components initialized.
+2025-06-04 13:01:19,714 - INFO - [main:75] - Main window shown.
+2025-06-04 13:01:29,344 - INFO - [main_window:133] - Command entered via UI text input: open notepad
+2025-06-04 13:01:30,470 - INFO - [gemini_service:52] - Gemini raw response received: ```json
+{
+  "intent": "open_application",
+  "entities": {
+    "application_name": "Notepad"
+  }
+}
+```...
+2025-06-04 13:01:30,471 - INFO - [nlu_agent:156] - NLUAgent successfully parsed command. Intent: 'open_application', Entities: {'application_name': 'Notepad'}
+2025-06-04 13:01:30,471 - INFO - [main_orchestrator:71] - NLU provided/resolved application_name: 'Notepad'. Updating context.
+2025-06-04 13:01:31,888 - INFO - [gemini_service:52] - Gemini raw response received: ```json
+[
+  {
+    "action_type": "open_application",
+    "parameters": {
+      "application_name": "Notepad",
+      "activate_if_running": true
+    }
+  }
+]
+```...
+2025-06-04 13:01:31,888 - INFO - [planning_agent:209] - PlanningAgent generated plan with 1 steps.
+2025-06-04 13:01:31,890 - INFO - [action_agent:23] - ActionAgent executing: 'open_application' with params: {'application_name': 'Notepad', 'activate_if_running': True}, context: {'last_opened_app_name': 'Notepad'}
+2025-06-04 13:01:31,890 - INFO - [os_interaction_service:86] - Attempting to manage application: Notepad
+2025-06-04 13:01:31,891 - INFO - [os_interaction_service:32] - No window found containing title 'Notepad'.
+2025-06-04 13:01:31,891 - INFO - [os_interaction_service:110] - No readily identifiable existing window for 'Notepad'. Will attempt to launch.
+2025-06-04 13:01:31,891 - INFO - [os_interaction_service:70] - Attempting to open 'Notepad' via Windows Start Menu search.
+2025-06-04 13:01:34,950 - INFO - [os_interaction_service:78] - Sent 'Notepad' to Start Menu search and pressed Enter.
+2025-06-04 13:01:34,950 - INFO - [os_interaction_service:141] - Initiated opening of 'Notepad'. Waiting for window to appear...
+2025-06-04 13:01:37,951 - INFO - [os_interaction_service:32] - No window found containing title 'Untitled - Notepad'.
+2025-06-04 13:01:37,952 - INFO - [os_interaction_service:29] - Found window(s) matching substring 'Notepad': ['*fpv.py - Notepad']
+2025-06-04 13:01:37,953 - INFO - [os_interaction_service:57] - Activated window: '*fpv.py - Notepad'
+2025-06-04 13:01:38,454 - INFO - [os_interaction_service:165] - Successfully activated newly managed window: '*fpv.py - Notepad'
+2025-06-04 13:01:38,454 - INFO - [action_agent:190] - Action 'open_application' executed successfully. Result data: {'last_opened_window_title': '*fpv.py - Notepad', 'last_opened_app_name': 'Notepad'}
+2025-06-04 13:01:38,966 - INFO - [main_orchestrator:173] - Plan execution completed.
+2025-06-04 13:01:50,731 - INFO - [main_window:133] - Command entered via UI text input: clear the windows on it
+2025-06-04 13:01:51,773 - INFO - [gemini_service:52] - Gemini raw response received: ```json
+{
+  "intent": "clear_application_content",
+  "entities": {
+    "application_name": "Notepad"
+  }
+}
+```...
+2025-06-04 13:01:51,774 - INFO - [nlu_agent:156] - NLUAgent successfully parsed command. Intent: 'clear_application_content', Entities: {'application_name': 'Notepad'}
+2025-06-04 13:01:53,264 - INFO - [gemini_service:52] - Gemini raw response received: ```json
+[
+  {
+    "action_type": "activate_window",
+    "parameters": {
+      "window_title_hint": "Notepad"
+    }
+  },
+  {
+    "action_type": "clear_text_in_window",
+    "parameters": {
+      "target...
+2025-06-04 13:01:53,265 - INFO - [planning_agent:209] - PlanningAgent generated plan with 2 steps.
+2025-06-04 13:01:53,266 - INFO - [action_agent:23] - ActionAgent executing: 'activate_window' with params: {'window_title_hint': 'Notepad'}, context: {'last_opened_app_name': 'Notepad', 'last_opened_window_title': '*fpv.py - Notepad'}
+2025-06-04 13:01:53,267 - INFO - [os_interaction_service:29] - Found window(s) matching substring 'Notepad': ['*fpv.py - Notepad']
+2025-06-04 13:01:53,272 - INFO - [os_interaction_service:57] - Activated window: '*fpv.py - Notepad'
+2025-06-04 13:01:53,773 - INFO - [action_agent:190] - Action 'activate_window' executed successfully. Result data: None
+2025-06-04 13:01:54,280 - INFO - [action_agent:23] - ActionAgent executing: 'clear_text_in_window' with params: {'target_window_title': 'Notepad'}, context: {'last_opened_app_name': 'Notepad', 'last_opened_window_title': '*fpv.py - Notepad'}
+2025-06-04 13:01:54,281 - INFO - [action_agent:127] - Attempting to clear text in window: Notepad
+2025-06-04 13:01:54,282 - INFO - [os_interaction_service:29] - Found window(s) matching substring 'Notepad': ['*fpv.py - Notepad']
+2025-06-04 13:01:54,282 - INFO - [os_interaction_service:57] - Activated window: '*fpv.py - Notepad'
+2025-06-04 13:01:54,983 - INFO - [os_interaction_service:263] - Pressing key(s): ['ctrl', 'a'] (intended target: 'currently active')
+2025-06-04 13:01:55,285 - INFO - [os_interaction_service:263] - Pressing key(s): delete (intended target: 'currently active')
+2025-06-04 13:01:55,385 - INFO - [action_agent:190] - Action 'clear_text_in_window' executed successfully. Result data: None
+2025-06-04 13:01:55,893 - INFO - [main_orchestrator:173] - Plan execution completed.
+2025-06-04 13:02:07,383 - INFO - [main_window:133] - Command entered via UI text input: write how are you?
+2025-06-04 13:02:08,449 - INFO - [gemini_service:52] - Gemini raw response received: ```json
+{
+  "intent": "type_text_in_application",
+  "entities": {
+    "application_name": "Notepad",
+    "text_to_type": "how are you?"
+  }
+}
+```...
+2025-06-04 13:02:08,450 - INFO - [nlu_agent:156] - NLUAgent successfully parsed command. Intent: 'type_text_in_application', Entities: {'application_name': 'Notepad', 'text_to_type': 'how are you?'}
+2025-06-04 13:02:10,079 - INFO - [gemini_service:52] - Gemini raw response received: ```json
+[
+  {
+    "action_type": "open_application",
+    "parameters": {
+      "application_name": "Notepad",
+      "activate_if_running": true
+    }
+  },
+  {
+    "action_type": "type_text",
+    "para...
+2025-06-04 13:02:10,079 - INFO - [planning_agent:209] - PlanningAgent generated plan with 2 steps.
+2025-06-04 13:02:10,081 - INFO - [action_agent:23] - ActionAgent executing: 'open_application' with params: {'application_name': 'Notepad', 'activate_if_running': True}, context: {'last_opened_app_name': 'Notepad', 'last_opened_window_title': '*fpv.py - Notepad'}
+2025-06-04 13:02:10,081 - INFO - [os_interaction_service:86] - Attempting to manage application: Notepad
+2025-06-04 13:02:10,081 - INFO - [os_interaction_service:29] - Found window(s) matching substring 'Notepad': ['*fpv.py - Notepad']
+2025-06-04 13:02:10,081 - INFO - [os_interaction_service:102] - Found existing window for 'Notepad': '*fpv.py - Notepad'. Activating it.
+2025-06-04 13:02:10,086 - INFO - [os_interaction_service:57] - Activated window: '*fpv.py - Notepad'
+2025-06-04 13:02:10,587 - INFO - [action_agent:190] - Action 'open_application' executed successfully. Result data: {'last_opened_window_title': '*fpv.py - Notepad', 'last_opened_app_name': 'Notepad'}
+2025-06-04 13:02:11,095 - INFO - [action_agent:23] - ActionAgent executing: 'type_text' with params: {'text': 'how are you?', 'target_window_title': '{{last_opened_window_title}}'}, context: {'last_opened_app_name': 'Notepad', 'last_opened_window_title': '*fpv.py - Notepad'}
+2025-06-04 13:02:11,095 - INFO - [os_interaction_service:29] - Found window(s) matching substring '*fpv.py - Notepad': ['*fpv.py - Notepad']
+2025-06-04 13:02:11,095 - INFO - [os_interaction_service:57] - Activated window: '*fpv.py - Notepad'
+2025-06-04 13:02:11,596 - INFO - [os_interaction_service:242] - Typing text: 'how are you?...' in '*fpv.py - Notepad'
+2025-06-04 13:02:11,824 - INFO - [action_agent:190] - Action 'type_text' executed successfully. Result data: None
+2025-06-04 13:02:12,342 - INFO - [main_orchestrator:173] - Plan execution completed.
+2025-06-04 13:02:17,280 - INFO - [main_window:133] - Command entered via UI text input: close it
+2025-06-04 13:02:18,261 - INFO - [gemini_service:52] - Gemini raw response received: ```json
+{
+  "intent": "close_application",
+  "entities": {
+    "application_name": "Notepad"
+  }
+}
+```...
+2025-06-04 13:02:18,261 - INFO - [nlu_agent:156] - NLUAgent successfully parsed command. Intent: 'close_application', Entities: {'application_name': 'Notepad'}
+2025-06-04 13:02:19,634 - INFO - [gemini_service:52] - Gemini raw response received: ```json
+[
+  {
+    "action_type": "close_application",
+    "parameters": {
+      "application_name": "Notepad"
+    }
+  }
+]
+```...
+2025-06-04 13:02:19,634 - INFO - [planning_agent:209] - PlanningAgent generated plan with 1 steps.
+2025-06-04 13:02:19,635 - INFO - [action_agent:23] - ActionAgent executing: 'close_application' with params: {'application_name': 'Notepad'}, context: {'last_opened_app_name': 'Notepad', 'last_opened_window_title': '*fpv.py - Notepad'}
+2025-06-04 13:02:19,635 - INFO - [os_interaction_service:178] - Attempting to close window with title hint: 'Notepad'
+2025-06-04 13:02:19,635 - INFO - [os_interaction_service:29] - Found window(s) matching substring 'Notepad': ['*fpv.py - Notepad']
+2025-06-04 13:02:19,640 - INFO - [os_interaction_service:57] - Activated window: '*fpv.py - Notepad'
+2025-06-04 13:02:20,142 - INFO - [os_interaction_service:202] - Sending close keys ['alt', 'f4'] to '*fpv.py - Notepad'
+2025-06-04 13:02:20,142 - INFO - [os_interaction_service:263] - Pressing key(s): ['alt', 'f4'] (intended target: 'currently active')
+2025-06-04 13:02:20,243 - INFO - [os_interaction_service:204] - Close command sent to ''.
+2025-06-04 13:02:20,744 - INFO - [os_interaction_service:29] - Found window(s) matching substring '': ['', '', '', '', 'Aura - AI Desktop Assistant', 'CC Ai – main.py', 'AI App: GUI-Controlled RPA | Google AI Studio and 1 more page - Personal - Microsoft\u200b Edge', 'Settings', 'Settings', 'Windows Input Experience', '', '', '', '', '', '', 'Program Manager']
+2025-06-04 13:02:20,745 - WARNING - [os_interaction_service:208] - Window '' might still be open (e.g., save dialog).
+2025-06-04 13:02:20,745 - INFO - [action_agent:190] - Action 'close_application' executed successfully. Result data: None
+2025-06-04 13:02:21,243 - INFO - [main_orchestrator:173] - Plan execution completed.
+2025-06-04 13:02:35,728 - INFO - [main_window:133] - Command entered via UI text input: open whatsapp and search for naincy
+2025-06-04 13:02:36,764 - INFO - [gemini_service:52] - Gemini raw response received: ```json
+{
+  "intent": "open_application",
+  "entities": {
+    "application_name": "WhatsApp",
+    "search_query": "naincy"
+  }
+}
+```...
+2025-06-04 13:02:36,765 - INFO - [nlu_agent:156] - NLUAgent successfully parsed command. Intent: 'open_application', Entities: {'application_name': 'WhatsApp', 'search_query': 'naincy'}
+2025-06-04 13:02:36,765 - INFO - [main_orchestrator:71] - NLU provided/resolved application_name: 'WhatsApp'. Updating context.
+2025-06-04 13:02:38,611 - INFO - [gemini_service:52] - Gemini raw response received: ```json
+[
+  {
+    "action_type": "open_application",
+    "parameters": {
+      "application_name": "WhatsApp",
+      "activate_if_running": true
+    }
+  },
+  {
+    "action_type": "activate_window",
+  ...
+2025-06-04 13:02:38,612 - INFO - [planning_agent:209] - PlanningAgent generated plan with 3 steps.
+2025-06-04 13:02:38,613 - INFO - [action_agent:23] - ActionAgent executing: 'open_application' with params: {'application_name': 'WhatsApp', 'activate_if_running': True}, context: {'last_opened_app_name': 'WhatsApp'}
+2025-06-04 13:02:38,614 - INFO - [os_interaction_service:86] - Attempting to manage application: WhatsApp
+2025-06-04 13:02:38,614 - INFO - [os_interaction_service:32] - No window found containing title 'WhatsApp'.
+2025-06-04 13:02:38,614 - INFO - [os_interaction_service:110] - No readily identifiable existing window for 'WhatsApp'. Will attempt to launch.
+2025-06-04 13:02:38,614 - INFO - [os_interaction_service:70] - Attempting to open 'WhatsApp' via Windows Start Menu search.
+2025-06-04 13:02:41,726 - INFO - [os_interaction_service:78] - Sent 'WhatsApp' to Start Menu search and pressed Enter.
+2025-06-04 13:02:41,726 - INFO - [os_interaction_service:141] - Initiated opening of 'WhatsApp'. Waiting for window to appear...
+2025-06-04 13:02:44,728 - INFO - [os_interaction_service:29] - Found window(s) matching substring 'WhatsApp': ['WhatsApp']
+2025-06-04 13:02:44,728 - INFO - [os_interaction_service:57] - Activated window: 'WhatsApp'
+2025-06-04 13:02:45,229 - INFO - [os_interaction_service:165] - Successfully activated newly managed window: 'WhatsApp'
+2025-06-04 13:02:45,229 - INFO - [action_agent:190] - Action 'open_application' executed successfully. Result data: {'last_opened_window_title': 'WhatsApp', 'last_opened_app_name': 'WhatsApp'}
+2025-06-04 13:02:45,723 - INFO - [action_agent:23] - ActionAgent executing: 'activate_window' with params: {'window_title_hint': 'WhatsApp'}, context: {'last_opened_app_name': 'WhatsApp', 'last_opened_window_title': 'WhatsApp'}
+2025-06-04 13:02:45,724 - INFO - [os_interaction_service:29] - Found window(s) matching substring 'WhatsApp': ['WhatsApp']
+2025-06-04 13:02:45,724 - INFO - [os_interaction_service:57] - Activated window: 'WhatsApp'
+2025-06-04 13:02:46,225 - INFO - [action_agent:190] - Action 'activate_window' executed successfully. Result data: None
+2025-06-04 13:02:46,737 - INFO - [action_agent:23] - ActionAgent executing: 'type_text' with params: {'text': 'naincy', 'target_window_title': 'WhatsApp'}, context: {'last_opened_app_name': 'WhatsApp', 'last_opened_window_title': 'WhatsApp'}
+2025-06-04 13:02:46,738 - INFO - [os_interaction_service:29] - Found window(s) matching substring 'WhatsApp': ['WhatsApp']
+2025-06-04 13:02:46,738 - INFO - [os_interaction_service:57] - Activated window: 'WhatsApp'
+2025-06-04 13:02:47,240 - INFO - [os_interaction_service:242] - Typing text: 'naincy...' in 'WhatsApp'
+2025-06-04 13:02:47,404 - INFO - [action_agent:190] - Action 'type_text' executed successfully. Result data: None
+2025-06-04 13:02:47,893 - INFO - [main_orchestrator:173] - Plan execution completed.
+2025-06-04 13:03:04,555 - INFO - [main_window:133] - Command entered via UI text input: say hello to naincy
+2025-06-04 13:03:05,576 - INFO - [gemini_service:52] - Gemini raw response received: ```json
+{
+  "intent": "send_message",
+  "entities": {
+    "recipient": "naincy",
+    "message_content": "hello",
+    "application_name": "WhatsApp"
+  }
+}
+```...
+2025-06-04 13:03:05,577 - INFO - [nlu_agent:156] - NLUAgent successfully parsed command. Intent: 'send_message', Entities: {'recipient': 'naincy', 'message_content': 'hello', 'application_name': 'WhatsApp'}
+2025-06-04 13:03:06,997 - INFO - [gemini_service:52] - Gemini raw response received: ```json
+[
+  {
+    "action_type": "send_message_whatsapp",
+    "parameters": {
+      "recipient": "naincy",
+      "message_content": "hello"
+    }
+  }
+]
+```...
+2025-06-04 13:03:06,997 - INFO - [planning_agent:209] - PlanningAgent generated plan with 1 steps.
+2025-06-04 13:03:06,999 - INFO - [action_agent:23] - ActionAgent executing: 'send_message_whatsapp' with params: {'recipient': 'naincy', 'message_content': 'hello'}, context: {'last_opened_app_name': 'WhatsApp', 'last_opened_window_title': 'WhatsApp'}
+2025-06-04 13:03:06,999 - WARNING - [action_agent:186] - Unknown or not implemented action_type: 'send_message_whatsapp'
+2025-06-04 13:03:06,999 - ERROR - [action_agent:192] - Action 'send_message_whatsapp' failed or not fully implemented. Result data: {'error': 'Unknown action type: send_message_whatsapp'}
+2025-06-04 13:03:07,000 - ERROR - [main_orchestrator:164] - Plan execution halted at step 1 due to action failure.
+2025-06-04 13:03:11,209 - INFO - [main_window:239] - MainWindow closeEvent triggered. Stopping voice service if active...
+2025-06-04 13:03:11,209 - INFO - [voice_service:295] - Voice service is not running.
+2025-06-04 13:03:11,210 - INFO - [main_window:242] - Aura application is preparing to shut down.
+2025-06-04 13:03:11,222 - INFO - [main:79] - Application exited normally via sys.exit().
+2025-06-04 13:03:11,223 - INFO - [main:85] - Aura application is shutting down.
+2025-06-04 13:03:11,349 - INFO - [voice_service:295] - Voice service is not running.
+2025-06-04 13:03:11,349 - INFO - [voice_service:301] - Porcupine instance deleted.
+2025-06-04 13:11:38,898 - INFO - [logger_config:39] - Logging setup complete.
+2025-06-04 13:11:38,898 - INFO - [main:22] - Application started. Logging to: E:\CC Ai\logs\aura_app.log
+2025-06-04 13:11:38,964 - INFO - [voice_service:76] - Custom keyword file found: E:\CC Ai\aura_core\services\..\..\assets\porcupine_models\Hey-cc_en_windows_v3_0_0.ppn
+2025-06-04 13:11:43,815 - INFO - [voice_service:104] - Porcupine initialized for keyword: 'Hey cc' with paths: ['E:\\CC Ai\\aura_core\\services\\..\\..\\assets\\porcupine_models\\Hey-cc_en_windows_v3_0_0.ppn']
+2025-06-04 13:11:46,552 - INFO - [voice_service:121] - Whisper model 'base.en' loaded.
+2025-06-04 13:11:46,553 - INFO - [main_window:64] - MainWindow initialized.
+2025-06-04 13:11:46,554 - INFO - [gemini_service:28] - GeminiService initialized successfully with gemini-1.5-flash-latest.
+2025-06-04 13:11:46,554 - INFO - [os_interaction_service:16] - OSInteractionService initialized for OS: windows
+2025-06-04 13:11:46,554 - INFO - [perception_agent:13] - PerceptionAgent initialized.
+2025-06-04 13:11:46,555 - INFO - [perception_agent:15] - PerceptionAgent has access to GeminiService for vision tasks.
+2025-06-04 13:11:46,555 - INFO - [nlu_agent:14] - NLUAgent initialized.
+2025-06-04 13:11:46,555 - INFO - [planning_agent:14] - PlanningAgent initialized.
+2025-06-04 13:11:46,555 - INFO - [action_agent:16] - ActionAgent initialized.
+2025-06-04 13:11:46,555 - INFO - [main_orchestrator:34] - MainOrchestrator initialized with NLU, Planning, Action, and Perception agents.
+2025-06-04 13:11:46,556 - INFO - [main:50] - Core backend components initialized.
+2025-06-04 13:11:47,129 - INFO - [main:75] - Main window shown.
+2025-06-04 13:12:03,125 - INFO - [main_window:133] - Command entered via UI text input: open whatsapp and send hello to naincy
+2025-06-04 13:12:05,785 - INFO - [gemini_service:52] - Gemini raw response received: ```json
+{
+  "intent": "send_message",
+  "entities": {
+    "application_name": "Whatsapp",
+    "recipient": "naincy",
+    "message_content": "hello"
+  }
+}
+```...
+2025-06-04 13:12:05,785 - INFO - [nlu_agent:156] - NLUAgent successfully parsed command. Intent: 'send_message', Entities: {'application_name': 'Whatsapp', 'recipient': 'naincy', 'message_content': 'hello'}
+2025-06-04 13:12:05,786 - INFO - [main_orchestrator:71] - NLU provided/resolved application_name: 'Whatsapp'. Updating context.
+2025-06-04 13:12:06,931 - INFO - [gemini_service:52] - Gemini raw response received: ```json
+[
+  {
+    "action_type": "send_message_whatsapp",
+    "parameters": {
+      "recipient": "naincy",
+      "message_content": "hello"
+    }
+  }
+]
+```...
+2025-06-04 13:12:06,932 - INFO - [planning_agent:209] - PlanningAgent generated plan with 1 steps.
+2025-06-04 13:12:06,933 - INFO - [action_agent:23] - ActionAgent executing: 'send_message_whatsapp' with params: {'recipient': 'naincy', 'message_content': 'hello'}, context: {'last_opened_app_name': 'Whatsapp'}
+2025-06-04 13:12:06,934 - WARNING - [action_agent:228] - Unknown or not implemented action_type: 'send_message_whatsapp'
+2025-06-04 13:12:06,934 - ERROR - [action_agent:234] - Action 'send_message_whatsapp' failed or not fully implemented. Result data: {'error': 'Unknown action type: send_message_whatsapp'}
+2025-06-04 13:12:06,934 - ERROR - [main_orchestrator:164] - Plan execution halted at step 1 due to action failure.
+2025-06-04 13:12:18,519 - INFO - [main_window:133] - Command entered via UI text input: open whatsapp
+2025-06-04 13:12:19,742 - INFO - [gemini_service:52] - Gemini raw response received: ```json
+{
+  "intent": "open_application",
+  "entities": {
+    "application_name": "Whatsapp"
+  }
+}
+```...
+2025-06-04 13:12:19,742 - INFO - [nlu_agent:156] - NLUAgent successfully parsed command. Intent: 'open_application', Entities: {'application_name': 'Whatsapp'}
+2025-06-04 13:12:20,955 - INFO - [gemini_service:52] - Gemini raw response received: ```json
+[
+  {
+    "action_type": "open_application",
+    "parameters": {
+      "application_name": "Whatsapp",
+      "activate_if_running": true
+    }
+  }
+]
+```...
+2025-06-04 13:12:20,956 - INFO - [planning_agent:209] - PlanningAgent generated plan with 1 steps.
+2025-06-04 13:12:20,958 - INFO - [action_agent:23] - ActionAgent executing: 'open_application' with params: {'application_name': 'Whatsapp', 'activate_if_running': True}, context: {'last_opened_app_name': 'Whatsapp', 'error': 'Unknown action type: send_message_whatsapp'}
+2025-06-04 13:12:20,958 - INFO - [os_interaction_service:125] - Managing application: Whatsapp
+2025-06-04 13:12:20,959 - ERROR - [os_interaction_service:62] - Generic error finding window with title 'WhatsApp': 'Win32Window' object has no attribute 'isVisible'
+Traceback (most recent call last):
+  File "E:\CC Ai\aura_core\services\os_interaction_service.py", line 45, in find_window
+    visible_candidates = [w for w in candidates if w.isVisible and not w.isMinimized]
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\CC Ai\aura_core\services\os_interaction_service.py", line 45, in <listcomp>
+    visible_candidates = [w for w in candidates if w.isVisible and not w.isMinimized]
+                                                   ^^^^^^^^^^^
+AttributeError: 'Win32Window' object has no attribute 'isVisible'
+2025-06-04 13:12:20,961 - INFO - [os_interaction_service:143] - No readily identifiable existing window for 'WhatsApp'. Will launch new.
+2025-06-04 13:12:20,961 - INFO - [os_interaction_service:109] - Attempting to open 'Whatsapp' via Windows Start Menu search.
+2025-06-04 13:12:24,510 - INFO - [os_interaction_service:117] - Sent 'Whatsapp' to Start Menu search and pressed Enter.
+2025-06-04 13:12:24,510 - INFO - [os_interaction_service:172] - Initiated opening of 'Whatsapp'. Waiting up to 5s for window...
+2025-06-04 13:12:24,511 - ERROR - [os_interaction_service:62] - Generic error finding window with title 'WhatsApp': 'Win32Window' object has no attribute 'isVisible'
+Traceback (most recent call last):
+  File "E:\CC Ai\aura_core\services\os_interaction_service.py", line 39, in find_window
+    active_candidates = [w for w in candidates if w.isActive and w.isVisible and not w.isMinimized]
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\CC Ai\aura_core\services\os_interaction_service.py", line 39, in <listcomp>
+    active_candidates = [w for w in candidates if w.isActive and w.isVisible and not w.isMinimized]
+                                                                 ^^^^^^^^^^^
+AttributeError: 'Win32Window' object has no attribute 'isVisible'
+2025-06-04 13:12:24,513 - ERROR - [os_interaction_service:62] - Generic error finding window with title 'Whatsapp': 'Win32Window' object has no attribute 'isVisible'
+Traceback (most recent call last):
+  File "E:\CC Ai\aura_core\services\os_interaction_service.py", line 39, in find_window
+    active_candidates = [w for w in candidates if w.isActive and w.isVisible and not w.isMinimized]
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\CC Ai\aura_core\services\os_interaction_service.py", line 39, in <listcomp>
+    active_candidates = [w for w in candidates if w.isActive and w.isVisible and not w.isMinimized]
+                                                                 ^^^^^^^^^^^
+AttributeError: 'Win32Window' object has no attribute 'isVisible'
+2025-06-04 13:12:25,015 - ERROR - [os_interaction_service:62] - Generic error finding window with title 'WhatsApp': 'Win32Window' object has no attribute 'isVisible'
+Traceback (most recent call last):
+  File "E:\CC Ai\aura_core\services\os_interaction_service.py", line 39, in find_window
+    active_candidates = [w for w in candidates if w.isActive and w.isVisible and not w.isMinimized]
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\CC Ai\aura_core\services\os_interaction_service.py", line 39, in <listcomp>
+    active_candidates = [w for w in candidates if w.isActive and w.isVisible and not w.isMinimized]
+                                                                 ^^^^^^^^^^^
+AttributeError: 'Win32Window' object has no attribute 'isVisible'
+2025-06-04 13:12:25,016 - ERROR - [os_interaction_service:62] - Generic error finding window with title 'Whatsapp': 'Win32Window' object has no attribute 'isVisible'
+Traceback (most recent call last):
+  File "E:\CC Ai\aura_core\services\os_interaction_service.py", line 39, in find_window
+    active_candidates = [w for w in candidates if w.isActive and w.isVisible and not w.isMinimized]
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\CC Ai\aura_core\services\os_interaction_service.py", line 39, in <listcomp>
+    active_candidates = [w for w in candidates if w.isActive and w.isVisible and not w.isMinimized]
+                                                                 ^^^^^^^^^^^
+AttributeError: 'Win32Window' object has no attribute 'isVisible'
+2025-06-04 13:12:25,517 - ERROR - [os_interaction_service:62] - Generic error finding window with title 'WhatsApp': 'Win32Window' object has no attribute 'isVisible'
+Traceback (most recent call last):
+  File "E:\CC Ai\aura_core\services\os_interaction_service.py", line 39, in find_window
+    active_candidates = [w for w in candidates if w.isActive and w.isVisible and not w.isMinimized]
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\CC Ai\aura_core\services\os_interaction_service.py", line 39, in <listcomp>
+    active_candidates = [w for w in candidates if w.isActive and w.isVisible and not w.isMinimized]
+                                                                 ^^^^^^^^^^^
+AttributeError: 'Win32Window' object has no attribute 'isVisible'
+2025-06-04 13:12:25,518 - ERROR - [os_interaction_service:62] - Generic error finding window with title 'Whatsapp': 'Win32Window' object has no attribute 'isVisible'
+Traceback (most recent call last):
+  File "E:\CC Ai\aura_core\services\os_interaction_service.py", line 39, in find_window
+    active_candidates = [w for w in candidates if w.isActive and w.isVisible and not w.isMinimized]
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\CC Ai\aura_core\services\os_interaction_service.py", line 39, in <listcomp>
+    active_candidates = [w for w in candidates if w.isActive and w.isVisible and not w.isMinimized]
+                                                                 ^^^^^^^^^^^
+AttributeError: 'Win32Window' object has no attribute 'isVisible'
+2025-06-04 13:12:26,019 - ERROR - [os_interaction_service:62] - Generic error finding window with title 'WhatsApp': 'Win32Window' object has no attribute 'isVisible'
+Traceback (most recent call last):
+  File "E:\CC Ai\aura_core\services\os_interaction_service.py", line 39, in find_window
+    active_candidates = [w for w in candidates if w.isActive and w.isVisible and not w.isMinimized]
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\CC Ai\aura_core\services\os_interaction_service.py", line 39, in <listcomp>
+    active_candidates = [w for w in candidates if w.isActive and w.isVisible and not w.isMinimized]
+                                                                 ^^^^^^^^^^^
+AttributeError: 'Win32Window' object has no attribute 'isVisible'
+2025-06-04 13:12:26,020 - ERROR - [os_interaction_service:62] - Generic error finding window with title 'Whatsapp': 'Win32Window' object has no attribute 'isVisible'
+Traceback (most recent call last):
+  File "E:\CC Ai\aura_core\services\os_interaction_service.py", line 39, in find_window
+    active_candidates = [w for w in candidates if w.isActive and w.isVisible and not w.isMinimized]
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\CC Ai\aura_core\services\os_interaction_service.py", line 39, in <listcomp>
+    active_candidates = [w for w in candidates if w.isActive and w.isVisible and not w.isMinimized]
+                                                                 ^^^^^^^^^^^
+AttributeError: 'Win32Window' object has no attribute 'isVisible'
+2025-06-04 13:12:26,522 - ERROR - [os_interaction_service:62] - Generic error finding window with title 'WhatsApp': 'Win32Window' object has no attribute 'isVisible'
+Traceback (most recent call last):
+  File "E:\CC Ai\aura_core\services\os_interaction_service.py", line 39, in find_window
+    active_candidates = [w for w in candidates if w.isActive and w.isVisible and not w.isMinimized]
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\CC Ai\aura_core\services\os_interaction_service.py", line 39, in <listcomp>
+    active_candidates = [w for w in candidates if w.isActive and w.isVisible and not w.isMinimized]
+                                                                 ^^^^^^^^^^^
+AttributeError: 'Win32Window' object has no attribute 'isVisible'
+2025-06-04 13:12:26,523 - ERROR - [os_interaction_service:62] - Generic error finding window with title 'Whatsapp': 'Win32Window' object has no attribute 'isVisible'
+Traceback (most recent call last):
+  File "E:\CC Ai\aura_core\services\os_interaction_service.py", line 39, in find_window
+    active_candidates = [w for w in candidates if w.isActive and w.isVisible and not w.isMinimized]
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\CC Ai\aura_core\services\os_interaction_service.py", line 39, in <listcomp>
+    active_candidates = [w for w in candidates if w.isActive and w.isVisible and not w.isMinimized]
+                                                                 ^^^^^^^^^^^
+AttributeError: 'Win32Window' object has no attribute 'isVisible'
+2025-06-04 13:12:27,025 - ERROR - [os_interaction_service:62] - Generic error finding window with title 'WhatsApp': 'Win32Window' object has no attribute 'isVisible'
+Traceback (most recent call last):
+  File "E:\CC Ai\aura_core\services\os_interaction_service.py", line 45, in find_window
+    visible_candidates = [w for w in candidates if w.isVisible and not w.isMinimized]
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\CC Ai\aura_core\services\os_interaction_service.py", line 45, in <listcomp>
+    visible_candidates = [w for w in candidates if w.isVisible and not w.isMinimized]
+                                                   ^^^^^^^^^^^
+AttributeError: 'Win32Window' object has no attribute 'isVisible'
+2025-06-04 13:12:27,027 - ERROR - [os_interaction_service:62] - Generic error finding window with title 'Whatsapp': 'Win32Window' object has no attribute 'isVisible'
+Traceback (most recent call last):
+  File "E:\CC Ai\aura_core\services\os_interaction_service.py", line 45, in find_window
+    visible_candidates = [w for w in candidates if w.isVisible and not w.isMinimized]
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\CC Ai\aura_core\services\os_interaction_service.py", line 45, in <listcomp>
+    visible_candidates = [w for w in candidates if w.isVisible and not w.isMinimized]
+                                                   ^^^^^^^^^^^
+AttributeError: 'Win32Window' object has no attribute 'isVisible'
+2025-06-04 13:12:27,528 - ERROR - [os_interaction_service:62] - Generic error finding window with title 'WhatsApp': 'Win32Window' object has no attribute 'isVisible'
+Traceback (most recent call last):
+  File "E:\CC Ai\aura_core\services\os_interaction_service.py", line 45, in find_window
+    visible_candidates = [w for w in candidates if w.isVisible and not w.isMinimized]
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\CC Ai\aura_core\services\os_interaction_service.py", line 45, in <listcomp>
+    visible_candidates = [w for w in candidates if w.isVisible and not w.isMinimized]
+                                                   ^^^^^^^^^^^
+AttributeError: 'Win32Window' object has no attribute 'isVisible'
+2025-06-04 13:12:27,530 - ERROR - [os_interaction_service:62] - Generic error finding window with title 'Whatsapp': 'Win32Window' object has no attribute 'isVisible'
+Traceback (most recent call last):
+  File "E:\CC Ai\aura_core\services\os_interaction_service.py", line 45, in find_window
+    visible_candidates = [w for w in candidates if w.isVisible and not w.isMinimized]
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\CC Ai\aura_core\services\os_interaction_service.py", line 45, in <listcomp>
+    visible_candidates = [w for w in candidates if w.isVisible and not w.isMinimized]
+                                                   ^^^^^^^^^^^
+AttributeError: 'Win32Window' object has no attribute 'isVisible'
+2025-06-04 13:12:28,031 - ERROR - [os_interaction_service:62] - Generic error finding window with title 'WhatsApp': 'Win32Window' object has no attribute 'isVisible'
+Traceback (most recent call last):
+  File "E:\CC Ai\aura_core\services\os_interaction_service.py", line 45, in find_window
+    visible_candidates = [w for w in candidates if w.isVisible and not w.isMinimized]
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\CC Ai\aura_core\services\os_interaction_service.py", line 45, in <listcomp>
+    visible_candidates = [w for w in candidates if w.isVisible and not w.isMinimized]
+                                                   ^^^^^^^^^^^
+AttributeError: 'Win32Window' object has no attribute 'isVisible'
+2025-06-04 13:12:28,032 - ERROR - [os_interaction_service:62] - Generic error finding window with title 'Whatsapp': 'Win32Window' object has no attribute 'isVisible'
+Traceback (most recent call last):
+  File "E:\CC Ai\aura_core\services\os_interaction_service.py", line 45, in find_window
+    visible_candidates = [w for w in candidates if w.isVisible and not w.isMinimized]
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\CC Ai\aura_core\services\os_interaction_service.py", line 45, in <listcomp>
+    visible_candidates = [w for w in candidates if w.isVisible and not w.isMinimized]
+                                                   ^^^^^^^^^^^
+AttributeError: 'Win32Window' object has no attribute 'isVisible'
+2025-06-04 13:12:28,533 - ERROR - [os_interaction_service:62] - Generic error finding window with title 'WhatsApp': 'Win32Window' object has no attribute 'isVisible'
+Traceback (most recent call last):
+  File "E:\CC Ai\aura_core\services\os_interaction_service.py", line 45, in find_window
+    visible_candidates = [w for w in candidates if w.isVisible and not w.isMinimized]
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\CC Ai\aura_core\services\os_interaction_service.py", line 45, in <listcomp>
+    visible_candidates = [w for w in candidates if w.isVisible and not w.isMinimized]
+                                                   ^^^^^^^^^^^
+AttributeError: 'Win32Window' object has no attribute 'isVisible'
+2025-06-04 13:12:28,535 - ERROR - [os_interaction_service:62] - Generic error finding window with title 'Whatsapp': 'Win32Window' object has no attribute 'isVisible'
+Traceback (most recent call last):
+  File "E:\CC Ai\aura_core\services\os_interaction_service.py", line 45, in find_window
+    visible_candidates = [w for w in candidates if w.isVisible and not w.isMinimized]
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\CC Ai\aura_core\services\os_interaction_service.py", line 45, in <listcomp>
+    visible_candidates = [w for w in candidates if w.isVisible and not w.isMinimized]
+                                                   ^^^^^^^^^^^
+AttributeError: 'Win32Window' object has no attribute 'isVisible'
+2025-06-04 13:12:29,037 - ERROR - [os_interaction_service:62] - Generic error finding window with title 'WhatsApp': 'Win32Window' object has no attribute 'isVisible'
+Traceback (most recent call last):
+  File "E:\CC Ai\aura_core\services\os_interaction_service.py", line 45, in find_window
+    visible_candidates = [w for w in candidates if w.isVisible and not w.isMinimized]
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\CC Ai\aura_core\services\os_interaction_service.py", line 45, in <listcomp>
+    visible_candidates = [w for w in candidates if w.isVisible and not w.isMinimized]
+                                                   ^^^^^^^^^^^
+AttributeError: 'Win32Window' object has no attribute 'isVisible'
+2025-06-04 13:12:29,038 - ERROR - [os_interaction_service:62] - Generic error finding window with title 'Whatsapp': 'Win32Window' object has no attribute 'isVisible'
+Traceback (most recent call last):
+  File "E:\CC Ai\aura_core\services\os_interaction_service.py", line 45, in find_window
+    visible_candidates = [w for w in candidates if w.isVisible and not w.isMinimized]
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\CC Ai\aura_core\services\os_interaction_service.py", line 45, in <listcomp>
+    visible_candidates = [w for w in candidates if w.isVisible and not w.isMinimized]
+                                                   ^^^^^^^^^^^
+AttributeError: 'Win32Window' object has no attribute 'isVisible'
+2025-06-04 13:12:29,540 - WARNING - [os_interaction_service:213] - Launched 'Whatsapp' but could not find its window after 5.0s with hints: ['WhatsApp', 'Whatsapp'].
+2025-06-04 13:12:29,540 - INFO - [action_agent:232] - Action 'open_application' executed successfully. Result data: None
+2025-06-04 13:12:30,044 - INFO - [main_orchestrator:173] - Plan execution completed.
+2025-06-04 13:12:36,927 - INFO - [main_window:133] - Command entered via UI text input: send hello to naincy
+2025-06-04 13:12:38,012 - INFO - [gemini_service:52] - Gemini raw response received: ```json
+{
+  "intent": "send_message",
+  "entities": {
+    "recipient": "naincy",
+    "message_content": "hello",
+    "application_name": "Whatsapp"
+  }
+}
+```...
+2025-06-04 13:12:38,012 - INFO - [nlu_agent:156] - NLUAgent successfully parsed command. Intent: 'send_message', Entities: {'recipient': 'naincy', 'message_content': 'hello', 'application_name': 'Whatsapp'}
+2025-06-04 13:12:39,673 - INFO - [gemini_service:52] - Gemini raw response received: ```json
+[
+  {
+    "action_type": "open_application",
+    "parameters": {
+      "application_name": "Whatsapp",
+      "activate_if_running": true
+    }
+  },
+  {
+    "action_type": "send_message_whatsap...
+2025-06-04 13:12:39,673 - INFO - [planning_agent:209] - PlanningAgent generated plan with 2 steps.
+2025-06-04 13:12:39,673 - INFO - [action_agent:23] - ActionAgent executing: 'open_application' with params: {'application_name': 'Whatsapp', 'activate_if_running': True}, context: {'last_opened_app_name': 'Whatsapp', 'error': 'Unknown action type: send_message_whatsapp'}
+2025-06-04 13:12:39,673 - INFO - [os_interaction_service:125] - Managing application: Whatsapp
+2025-06-04 13:12:39,673 - ERROR - [os_interaction_service:62] - Generic error finding window with title 'WhatsApp': 'Win32Window' object has no attribute 'isVisible'
+Traceback (most recent call last):
+  File "E:\CC Ai\aura_core\services\os_interaction_service.py", line 45, in find_window
+    visible_candidates = [w for w in candidates if w.isVisible and not w.isMinimized]
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\CC Ai\aura_core\services\os_interaction_service.py", line 45, in <listcomp>
+    visible_candidates = [w for w in candidates if w.isVisible and not w.isMinimized]
+                                                   ^^^^^^^^^^^
+AttributeError: 'Win32Window' object has no attribute 'isVisible'
+2025-06-04 13:12:39,682 - INFO - [os_interaction_service:143] - No readily identifiable existing window for 'WhatsApp'. Will launch new.
+2025-06-04 13:12:39,682 - INFO - [os_interaction_service:109] - Attempting to open 'Whatsapp' via Windows Start Menu search.
+2025-06-04 13:12:43,232 - INFO - [os_interaction_service:117] - Sent 'Whatsapp' to Start Menu search and pressed Enter.
+2025-06-04 13:12:43,232 - INFO - [os_interaction_service:172] - Initiated opening of 'Whatsapp'. Waiting up to 5s for window...
+2025-06-04 13:12:43,233 - ERROR - [os_interaction_service:62] - Generic error finding window with title 'WhatsApp': 'Win32Window' object has no attribute 'isVisible'
+Traceback (most recent call last):
+  File "E:\CC Ai\aura_core\services\os_interaction_service.py", line 39, in find_window
+    active_candidates = [w for w in candidates if w.isActive and w.isVisible and not w.isMinimized]
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\CC Ai\aura_core\services\os_interaction_service.py", line 39, in <listcomp>
+    active_candidates = [w for w in candidates if w.isActive and w.isVisible and not w.isMinimized]
+                                                                 ^^^^^^^^^^^
+AttributeError: 'Win32Window' object has no attribute 'isVisible'
+2025-06-04 13:12:43,234 - ERROR - [os_interaction_service:62] - Generic error finding window with title 'Whatsapp': 'Win32Window' object has no attribute 'isVisible'
+Traceback (most recent call last):
+  File "E:\CC Ai\aura_core\services\os_interaction_service.py", line 39, in find_window
+    active_candidates = [w for w in candidates if w.isActive and w.isVisible and not w.isMinimized]
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\CC Ai\aura_core\services\os_interaction_service.py", line 39, in <listcomp>
+    active_candidates = [w for w in candidates if w.isActive and w.isVisible and not w.isMinimized]
+                                                                 ^^^^^^^^^^^
+AttributeError: 'Win32Window' object has no attribute 'isVisible'
+2025-06-04 13:12:43,735 - ERROR - [os_interaction_service:62] - Generic error finding window with title 'WhatsApp': 'Win32Window' object has no attribute 'isVisible'
+Traceback (most recent call last):
+  File "E:\CC Ai\aura_core\services\os_interaction_service.py", line 39, in find_window
+    active_candidates = [w for w in candidates if w.isActive and w.isVisible and not w.isMinimized]
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\CC Ai\aura_core\services\os_interaction_service.py", line 39, in <listcomp>
+    active_candidates = [w for w in candidates if w.isActive and w.isVisible and not w.isMinimized]
+                                                                 ^^^^^^^^^^^
+AttributeError: 'Win32Window' object has no attribute 'isVisible'
+2025-06-04 13:12:43,736 - ERROR - [os_interaction_service:62] - Generic error finding window with title 'Whatsapp': 'Win32Window' object has no attribute 'isVisible'
+Traceback (most recent call last):
+  File "E:\CC Ai\aura_core\services\os_interaction_service.py", line 39, in find_window
+    active_candidates = [w for w in candidates if w.isActive and w.isVisible and not w.isMinimized]
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\CC Ai\aura_core\services\os_interaction_service.py", line 39, in <listcomp>
+    active_candidates = [w for w in candidates if w.isActive and w.isVisible and not w.isMinimized]
+                                                                 ^^^^^^^^^^^
+AttributeError: 'Win32Window' object has no attribute 'isVisible'
+2025-06-04 13:12:44,237 - ERROR - [os_interaction_service:62] - Generic error finding window with title 'WhatsApp': 'Win32Window' object has no attribute 'isVisible'
+Traceback (most recent call last):
+  File "E:\CC Ai\aura_core\services\os_interaction_service.py", line 39, in find_window
+    active_candidates = [w for w in candidates if w.isActive and w.isVisible and not w.isMinimized]
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\CC Ai\aura_core\services\os_interaction_service.py", line 39, in <listcomp>
+    active_candidates = [w for w in candidates if w.isActive and w.isVisible and not w.isMinimized]
+                                                                 ^^^^^^^^^^^
+AttributeError: 'Win32Window' object has no attribute 'isVisible'
+2025-06-04 13:12:44,239 - ERROR - [os_interaction_service:62] - Generic error finding window with title 'Whatsapp': 'Win32Window' object has no attribute 'isVisible'
+Traceback (most recent call last):
+  File "E:\CC Ai\aura_core\services\os_interaction_service.py", line 39, in find_window
+    active_candidates = [w for w in candidates if w.isActive and w.isVisible and not w.isMinimized]
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\CC Ai\aura_core\services\os_interaction_service.py", line 39, in <listcomp>
+    active_candidates = [w for w in candidates if w.isActive and w.isVisible and not w.isMinimized]
+                                                                 ^^^^^^^^^^^
+AttributeError: 'Win32Window' object has no attribute 'isVisible'
+2025-06-04 13:12:44,740 - ERROR - [os_interaction_service:62] - Generic error finding window with title 'WhatsApp': 'Win32Window' object has no attribute 'isVisible'
+Traceback (most recent call last):
+  File "E:\CC Ai\aura_core\services\os_interaction_service.py", line 39, in find_window
+    active_candidates = [w for w in candidates if w.isActive and w.isVisible and not w.isMinimized]
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\CC Ai\aura_core\services\os_interaction_service.py", line 39, in <listcomp>
+    active_candidates = [w for w in candidates if w.isActive and w.isVisible and not w.isMinimized]
+                                                                 ^^^^^^^^^^^
+AttributeError: 'Win32Window' object has no attribute 'isVisible'
+2025-06-04 13:12:44,741 - ERROR - [os_interaction_service:62] - Generic error finding window with title 'Whatsapp': 'Win32Window' object has no attribute 'isVisible'
+Traceback (most recent call last):
+  File "E:\CC Ai\aura_core\services\os_interaction_service.py", line 39, in find_window
+    active_candidates = [w for w in candidates if w.isActive and w.isVisible and not w.isMinimized]
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\CC Ai\aura_core\services\os_interaction_service.py", line 39, in <listcomp>
+    active_candidates = [w for w in candidates if w.isActive and w.isVisible and not w.isMinimized]
+                                                                 ^^^^^^^^^^^
+AttributeError: 'Win32Window' object has no attribute 'isVisible'
+2025-06-04 13:12:45,244 - ERROR - [os_interaction_service:62] - Generic error finding window with title 'WhatsApp': 'Win32Window' object has no attribute 'isVisible'
+Traceback (most recent call last):
+  File "E:\CC Ai\aura_core\services\os_interaction_service.py", line 39, in find_window
+    active_candidates = [w for w in candidates if w.isActive and w.isVisible and not w.isMinimized]
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\CC Ai\aura_core\services\os_interaction_service.py", line 39, in <listcomp>
+    active_candidates = [w for w in candidates if w.isActive and w.isVisible and not w.isMinimized]
+                                                                 ^^^^^^^^^^^
+AttributeError: 'Win32Window' object has no attribute 'isVisible'
+2025-06-04 13:12:45,245 - ERROR - [os_interaction_service:62] - Generic error finding window with title 'Whatsapp': 'Win32Window' object has no attribute 'isVisible'
+Traceback (most recent call last):
+  File "E:\CC Ai\aura_core\services\os_interaction_service.py", line 39, in find_window
+    active_candidates = [w for w in candidates if w.isActive and w.isVisible and not w.isMinimized]
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\CC Ai\aura_core\services\os_interaction_service.py", line 39, in <listcomp>
+    active_candidates = [w for w in candidates if w.isActive and w.isVisible and not w.isMinimized]
+                                                                 ^^^^^^^^^^^
+AttributeError: 'Win32Window' object has no attribute 'isVisible'
+2025-06-04 13:12:45,746 - ERROR - [os_interaction_service:62] - Generic error finding window with title 'WhatsApp': 'Win32Window' object has no attribute 'isVisible'
+Traceback (most recent call last):
+  File "E:\CC Ai\aura_core\services\os_interaction_service.py", line 39, in find_window
+    active_candidates = [w for w in candidates if w.isActive and w.isVisible and not w.isMinimized]
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\CC Ai\aura_core\services\os_interaction_service.py", line 39, in <listcomp>
+    active_candidates = [w for w in candidates if w.isActive and w.isVisible and not w.isMinimized]
+                                                                 ^^^^^^^^^^^
+AttributeError: 'Win32Window' object has no attribute 'isVisible'
+2025-06-04 13:12:45,748 - ERROR - [os_interaction_service:62] - Generic error finding window with title 'Whatsapp': 'Win32Window' object has no attribute 'isVisible'
+Traceback (most recent call last):
+  File "E:\CC Ai\aura_core\services\os_interaction_service.py", line 39, in find_window
+    active_candidates = [w for w in candidates if w.isActive and w.isVisible and not w.isMinimized]
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\CC Ai\aura_core\services\os_interaction_service.py", line 39, in <listcomp>
+    active_candidates = [w for w in candidates if w.isActive and w.isVisible and not w.isMinimized]
+                                                                 ^^^^^^^^^^^
+AttributeError: 'Win32Window' object has no attribute 'isVisible'
+2025-06-04 13:12:46,249 - ERROR - [os_interaction_service:62] - Generic error finding window with title 'WhatsApp': 'Win32Window' object has no attribute 'isVisible'
+Traceback (most recent call last):
+  File "E:\CC Ai\aura_core\services\os_interaction_service.py", line 39, in find_window
+    active_candidates = [w for w in candidates if w.isActive and w.isVisible and not w.isMinimized]
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\CC Ai\aura_core\services\os_interaction_service.py", line 39, in <listcomp>
+    active_candidates = [w for w in candidates if w.isActive and w.isVisible and not w.isMinimized]
+                                                                 ^^^^^^^^^^^
+AttributeError: 'Win32Window' object has no attribute 'isVisible'
+2025-06-04 13:12:46,251 - ERROR - [os_interaction_service:62] - Generic error finding window with title 'Whatsapp': 'Win32Window' object has no attribute 'isVisible'
+Traceback (most recent call last):
+  File "E:\CC Ai\aura_core\services\os_interaction_service.py", line 39, in find_window
+    active_candidates = [w for w in candidates if w.isActive and w.isVisible and not w.isMinimized]
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\CC Ai\aura_core\services\os_interaction_service.py", line 39, in <listcomp>
+    active_candidates = [w for w in candidates if w.isActive and w.isVisible and not w.isMinimized]
+                                                                 ^^^^^^^^^^^
+AttributeError: 'Win32Window' object has no attribute 'isVisible'
+2025-06-04 13:12:46,753 - ERROR - [os_interaction_service:62] - Generic error finding window with title 'WhatsApp': 'Win32Window' object has no attribute 'isVisible'
+Traceback (most recent call last):
+  File "E:\CC Ai\aura_core\services\os_interaction_service.py", line 39, in find_window
+    active_candidates = [w for w in candidates if w.isActive and w.isVisible and not w.isMinimized]
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\CC Ai\aura_core\services\os_interaction_service.py", line 39, in <listcomp>
+    active_candidates = [w for w in candidates if w.isActive and w.isVisible and not w.isMinimized]
+                                                                 ^^^^^^^^^^^
+AttributeError: 'Win32Window' object has no attribute 'isVisible'
+2025-06-04 13:12:46,754 - ERROR - [os_interaction_service:62] - Generic error finding window with title 'Whatsapp': 'Win32Window' object has no attribute 'isVisible'
+Traceback (most recent call last):
+  File "E:\CC Ai\aura_core\services\os_interaction_service.py", line 39, in find_window
+    active_candidates = [w for w in candidates if w.isActive and w.isVisible and not w.isMinimized]
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\CC Ai\aura_core\services\os_interaction_service.py", line 39, in <listcomp>
+    active_candidates = [w for w in candidates if w.isActive and w.isVisible and not w.isMinimized]
+                                                                 ^^^^^^^^^^^
+AttributeError: 'Win32Window' object has no attribute 'isVisible'
+2025-06-04 13:12:47,255 - ERROR - [os_interaction_service:62] - Generic error finding window with title 'WhatsApp': 'Win32Window' object has no attribute 'isVisible'
+Traceback (most recent call last):
+  File "E:\CC Ai\aura_core\services\os_interaction_service.py", line 39, in find_window
+    active_candidates = [w for w in candidates if w.isActive and w.isVisible and not w.isMinimized]
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\CC Ai\aura_core\services\os_interaction_service.py", line 39, in <listcomp>
+    active_candidates = [w for w in candidates if w.isActive and w.isVisible and not w.isMinimized]
+                                                                 ^^^^^^^^^^^
+AttributeError: 'Win32Window' object has no attribute 'isVisible'
+2025-06-04 13:12:47,255 - ERROR - [os_interaction_service:62] - Generic error finding window with title 'Whatsapp': 'Win32Window' object has no attribute 'isVisible'
+Traceback (most recent call last):
+  File "E:\CC Ai\aura_core\services\os_interaction_service.py", line 39, in find_window
+    active_candidates = [w for w in candidates if w.isActive and w.isVisible and not w.isMinimized]
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\CC Ai\aura_core\services\os_interaction_service.py", line 39, in <listcomp>
+    active_candidates = [w for w in candidates if w.isActive and w.isVisible and not w.isMinimized]
+                                                                 ^^^^^^^^^^^
+AttributeError: 'Win32Window' object has no attribute 'isVisible'
+2025-06-04 13:12:47,759 - ERROR - [os_interaction_service:62] - Generic error finding window with title 'WhatsApp': 'Win32Window' object has no attribute 'isVisible'
+Traceback (most recent call last):
+  File "E:\CC Ai\aura_core\services\os_interaction_service.py", line 39, in find_window
+    active_candidates = [w for w in candidates if w.isActive and w.isVisible and not w.isMinimized]
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\CC Ai\aura_core\services\os_interaction_service.py", line 39, in <listcomp>
+    active_candidates = [w for w in candidates if w.isActive and w.isVisible and not w.isMinimized]
+                                                                 ^^^^^^^^^^^
+AttributeError: 'Win32Window' object has no attribute 'isVisible'
+2025-06-04 13:12:47,759 - ERROR - [os_interaction_service:62] - Generic error finding window with title 'Whatsapp': 'Win32Window' object has no attribute 'isVisible'
+Traceback (most recent call last):
+  File "E:\CC Ai\aura_core\services\os_interaction_service.py", line 39, in find_window
+    active_candidates = [w for w in candidates if w.isActive and w.isVisible and not w.isMinimized]
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\CC Ai\aura_core\services\os_interaction_service.py", line 39, in <listcomp>
+    active_candidates = [w for w in candidates if w.isActive and w.isVisible and not w.isMinimized]
+                                                                 ^^^^^^^^^^^
+AttributeError: 'Win32Window' object has no attribute 'isVisible'
+2025-06-04 13:12:48,262 - WARNING - [os_interaction_service:213] - Launched 'Whatsapp' but could not find its window after 5.0s with hints: ['WhatsApp', 'Whatsapp'].
+2025-06-04 13:12:48,262 - INFO - [action_agent:232] - Action 'open_application' executed successfully. Result data: None
+2025-06-04 13:12:48,761 - INFO - [action_agent:23] - ActionAgent executing: 'send_message_whatsapp' with params: {'recipient': 'naincy', 'message_content': 'hello'}, context: {'last_opened_app_name': 'Whatsapp', 'error': 'Unknown action type: send_message_whatsapp'}
+2025-06-04 13:12:48,761 - WARNING - [action_agent:228] - Unknown or not implemented action_type: 'send_message_whatsapp'
+2025-06-04 13:12:48,761 - ERROR - [action_agent:234] - Action 'send_message_whatsapp' failed or not fully implemented. Result data: {'error': 'Unknown action type: send_message_whatsapp'}
+2025-06-04 13:12:48,761 - ERROR - [main_orchestrator:164] - Plan execution halted at step 2 due to action failure.
+2025-06-04 13:12:56,357 - INFO - [main_window:239] - MainWindow closeEvent triggered. Stopping voice service if active...
+2025-06-04 13:12:56,357 - INFO - [voice_service:295] - Voice service is not running.
+2025-06-04 13:12:56,357 - INFO - [main_window:242] - Aura application is preparing to shut down.
+2025-06-04 13:12:56,362 - INFO - [main:79] - Application exited normally via sys.exit().
+2025-06-04 13:12:56,362 - INFO - [main:85] - Aura application is shutting down.
+2025-06-04 13:12:56,483 - INFO - [voice_service:295] - Voice service is not running.
+2025-06-04 13:12:56,483 - INFO - [voice_service:301] - Porcupine instance deleted.

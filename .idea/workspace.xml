@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="4562b912-e6d9-4c9b-b768-eea9c2a7d4be" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/CC Ai.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/icons/aura_icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/icons/microphone_off.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/icons/microphone_on.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/porcupine_models/Hey-cc_en_windows_v3_0_0.ppn" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/sounds/error.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/sounds/listening.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aura_core/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aura_core/agents/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aura_core/agents/action_agent.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aura_core/agents/base_agent.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aura_core/agents/content_agent.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aura_core/agents/knowledge_agent.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aura_core/agents/nlu_agent.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aura_core/agents/perception_agent.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aura_core/agents/planning_agent.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aura_core/main_orchestrator.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aura_core/services/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aura_core/services/accessibility_service.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aura_core/services/credential_manager.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aura_core/services/gemini_service.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aura_core/services/os_interaction_service.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aura_core/services/tts_services.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aura_core/services/voice_service.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aura_core/services/web_automation_services.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aura_core/services/whisper_services.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aura_core/utils/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aura_core/utils/exceptions.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aura_core/utils/helpers.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aura_core/utils/logger_config.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aura_ui/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aura_ui/main_window.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aura_ui/themes/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aura_ui/themes/dark_theme.qss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aura_ui/themes/light_theme.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aura_ui/themes/theme_manager.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aura_ui/utils_ui/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aura_ui/utils_ui/ui_helpers.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aura_ui/views/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aura_ui/widgets/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aura_ui/widgets/command_input_bar.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aura_ui/widgets/credential_prompt_dialog.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aura_ui/widgets/notification_widget.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aura_ui/widgets/settings_dialogue.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aura_ui/widgets/status_display.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aura_ui/widgets/stop_button.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/api_keys_tempelate.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/constants.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/default_settings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/user_settings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/Dev_plan.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/api_referance.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/architecture.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/structure.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/aura_app.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/setup.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/test_core/test_nlu_agent.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/test_core/test_perception_agent.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/test_integration/test_end_to_end_scenarios.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/test_ui/test_main_window.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
+  <component name="ProjectId" id="2y08p1tXm6kVIMZm17r8DGD6Bps" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;Python.main_orchestrator.executor&quot;: &quot;Run&quot;,
+    &quot;Python.main_window.executor&quot;: &quot;Run&quot;,
+    &quot;Python.os_interaction_service.executor&quot;: &quot;Run&quot;,
+    &quot;Python.planning_agent.executor&quot;: &quot;Run&quot;,
+    &quot;Python.voice_service.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/CC Ai/assests/porcupine_models&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\CC Ai\assests\porcupine_models" />
+      <recent name="E:\CC Ai\assests\icons" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\CC Ai\aura_core\utils" />
+      <recent name="E:\CC Ai\assests\sounds" />
+      <recent name="E:\CC Ai" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-6a121458b545-JavaScript-PY-251.25410.159" />
+        <option value="bundled-python-sdk-e0ed3721d81e-36ea0e71a18c-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-251.25410.159" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4562b912-e6d9-4c9b-b768-eea9c2a7d4be" name="Changes" comment="" />
+      <created>1748960309791</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1748960309791</updated>
+      <workItem from="1748960310894" duration="3706000" />
+      <workItem from="1748967456779" duration="7894000" />
+      <workItem from="1748975910651" duration="181000" />
+      <workItem from="1749016150351" duration="24627000" />
+      <workItem from="1749541359339" duration="1043000" />
+      <workItem from="1749546521789" duration="625000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/CC_Ai$main_window.coverage" NAME="main_window Coverage Results" MODIFIED="1748975499705" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/aura_ui" />
+    <SUITE FILE_PATH="coverage/CC_Ai$voice_service.coverage" NAME="voice_service Coverage Results" MODIFIED="1749022239621" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/aura_core/services" />
+    <SUITE FILE_PATH="coverage/CC_Ai$main.coverage" NAME="main Coverage Results" MODIFIED="1749541365371" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/CC_Ai$os_interaction_service.coverage" NAME="os_interaction_service Coverage Results" MODIFIED="1749025485969" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/aura_core/services" />
+    <SUITE FILE_PATH="coverage/CC_Ai$main_orchestrator.coverage" NAME="main_orchestrator Coverage Results" MODIFIED="1749021401261" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/aura_core" />
+    <SUITE FILE_PATH="coverage/CC_Ai$planning_agent.coverage" NAME="planning_agent Coverage Results" MODIFIED="1749038812274" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/aura_core/agents" />
+  </component>
+</project>

@@ -1,0 +1,153 @@
+/* Aura Dark Theme */
+
+QMainWindow {
+    background-color: #2B2B2B; /* Dark gray background */
+}
+
+QWidget#CentralWidget { /* Targeting the central widget specifically if needed */
+    background-color: #2B2B2B;
+}
+
+/* Command Input Bar styling */
+QWidget#CommandInputBar {
+    background-color: #3C3F41; /* Slightly lighter dark gray for input area */
+    border-radius: 5px;
+    padding: 2px;
+}
+
+QLineEdit#CommandInputField {
+    background-color: #45494A; /* Input field background */
+    color: #BBBBBB; /* Light gray text */
+    border: 1px solid #555555; /* Subtle border */
+    border-radius: 3px;
+    padding: 8px;
+    font-size: 14px;
+}
+
+QLineEdit#CommandInputField:focus {
+    border: 1px solid #007ACC; /* Accent color on focus (e.g., blue) */
+}
+
+QPushButton#MicButton, QPushButton#SendButton {
+    background-color: #4A4D4E;
+    color: #BBBBBB;
+    border: 1px solid #555555;
+    border-radius: 3px;
+    padding: 5px 10px;
+    min-width: 30px; /* Ensure minimum width */
+}
+
+QPushButton#MicButton:hover, QPushButton#SendButton:hover {
+    background-color: #5A5D5E;
+    border: 1px solid #656565;
+}
+
+QPushButton#MicButton:pressed, QPushButton#SendButton:pressed {
+    background-color: #3A3D3E;
+}
+
+/* Status Display styling */
+QWidget#StatusDisplay {
+    background-color: #2B2B2B;
+}
+
+QTextEdit#StatusTextArea {
+    background-color: #313335; /* Slightly different dark for status area */
+    color: #A9B7C6; /* Light blue/gray text */
+    border: 1px solid #45494A;
+    border-radius: 3px;
+    padding: 8px;
+    font-size: 12px;
+    font-family: Consolas, Monaco, monospace; /* Monospaced for status/logs */
+}
+
+/* Stop Button styling */
+QWidget#StopButtonContainer {
+    /* No specific background, inherits from parent */
+}
+
+QPushButton#StopButton {
+    background-color: #C75450; /* Reddish color for stop */
+    color: #FFFFFF; /* White text */
+    border: 1px solid #B74440;
+    border-radius: 20px; /* Circular if fixed size is square */
+    font-weight: bold;
+    padding: 8px;
+    font-size: 14px;
+    min-width: 60px; /* Ensure it's noticeable */
+}
+QPushButton#StopButton:hover {
+    background-color: #D76460;
+}
+QPushButton#StopButton:pressed {
+    background-color: #B74440;
+}
+
+/* General QPushButton styling (can be overridden by specific ID selectors) */
+QPushButton {
+    background-color: #555555;
+    color: #DDDDDD;
+    border: 1px solid #666666;
+    padding: 5px 10px;
+    border-radius: 3px;
+}
+QPushButton:hover {
+    background-color: #656565;
+}
+QPushButton:pressed {
+    background-color: #454545;
+}
+
+QLabel {
+    color: #BBBBBB; /* Light text for labels */
+    font-size: 14px;
+}
+
+/* ScrollBar styling */
+QScrollBar:vertical {
+    border: 1px solid #4A4D4E;
+    background: #3C3F41;
+    width: 12px;
+    margin: 0px 0px 0px 0px;
+}
+QScrollBar::handle:vertical {
+    background: #5A5D5E;
+    min-height: 20px;
+    border-radius: 6px;
+}
+QScrollBar::add-line:vertical, QScrollBar::sub-line:vertical {
+    border: none;
+    background: none;
+    height: 0px;
+    width: 0px;
+}
+QScrollBar::up-arrow:vertical, QScrollBar::down-arrow:vertical {
+    background: none;
+}
+QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
+    background: none;
+}
+
+QScrollBar:horizontal {
+    border: 1px solid #4A4D4E;
+    background: #3C3F41;
+    height: 12px;
+    margin: 0px 0px 0px 0px;
+}
+QScrollBar::handle:horizontal {
+    background: #5A5D5E;
+    min-width: 20px;
+    border-radius: 6px;
+}
+QScrollBar::add-line:horizontal, QScrollBar::sub-line:horizontal {
+    border: none;
+    background: none;
+    height: 0px;
+    width: 0px;
+}
+QScrollBar::left-arrow:horizontal, QScrollBar::right-arrow:horizontal {
+    background: none;
+}
+QScrollBar::add-page:horizontal, QScrollBar::sub-page:horizontal {
+    background: none;
+}

@@ -1,0 +1,10 @@
+PyQt6
+openai-whisper
+tortoise-tts
+google-generativeai
+pyautogui
+pyperclip
+selenium
+python-dotenv
+requests
+cryptography
