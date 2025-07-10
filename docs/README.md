@@ -9,3 +9,5 @@ Run the main.py
 
 Enter the commands, like open notepad, or write a short story on word file about a crow and water. 
 Or anyhing, any else command.
+
+To use the, voice command method, say:"Hey CC, .... then you command..."
