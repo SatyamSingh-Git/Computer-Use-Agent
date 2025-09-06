@@ -22,7 +22,7 @@ A clean, focused repository for the "Computer Use Agent" — a lightweight agent
 
 > Add a short animated GIF or screenshot here to showcase the agent in action.
 
-![demo-placeholder](docs/demo-placeholder.png)
+![demo-placeholder](demo-placeholder.png)
 
 ---
 
@@ -169,3 +169,4 @@ This repository uses the MIT License. See the LICENSE file for details.
 ---
 
 Thank you for checking out Computer Use Agent — a small, extensible toolset to make interacting with your computer easier and more efficient. Pull requests, issues, and ideas are all welcome!
+
